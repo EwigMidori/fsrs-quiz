@@ -1,0 +1,60 @@
+- EMA 计算
+	- SS_tot = Σ(每个实际值 - Ȳ)²
+	- SS_res = Σ(每个实际值 - 预测值)²
+	- R² = 1 - (SS_res / SS_tot)
+- R方计算
+- ARIMA 名称含义，参数含义，PACF、ACF
+- Hurst 指数的计算
+- AR 预测
+- Rollover Swap
+- VECM
+- ARCH(N) 模型
+	- 今天的方差 = 常数 + 系数 × 昨天冲击的平方
+	- 无条件方差公式 $\sigma^2 = \frac{\alpha_0}{1 - \alpha_1 - \alpha_2}$
+- GARCH
+	- 专门解决的问题——波动率本身随时间变化，而且今天的高波动往往跟着明天的高波动
+- 超额收益
+	- 预期收益率 - 无风险收益率
+- 总风险/年化波动率
+	- 收益率序列的标准差 如果是日收益率标准差，通常需要乘以 $\sqrt{252}$
+	- 日收益率：
+		- **对数收益率**：$R_t = \ln\left(\frac{P_t}{P_{t-1}}\right)$
+	- 日样本标准差：
+		- $\sigma_{day} = \sqrt{\frac{1}{n-1} \sum_{t=1}^{n} (R_t - \mu)^2}$
+	- 年标准差：$\sigma_{annual} = \sigma_{day} \times \sqrt{252}$
+	- **周收益率**，取 $N = 52$。
+	- **月收益率**，取 $N = 12$。
+	- 波动率是方差的平方根（方差的单位被平方了）
+- 夏普比计算
+	- 超额收益/总风险
+- 索提诺比率计算
+	- 超额收益/下行风险
+	- 计算下行标准差时，**只挑选低于目标收益率的样本数据**来进行统计。
+- VaR：Value at Risk
+	- 参数法 / 历史方差-协方差法
+		- 在均值为 0 的假设下，$\text{VaR} = Z_c \times \sigma \times \text{Asset Value}$（95% 置信度下，$Z_c = 1.65$；99% 置信度下，$Z_c = 2.33$）。
+		- 均值不是 0：均值 ± 倍数 × 标准差，一般用单尾 取减号
+- PIP
+	- **1 pip = 0.0001**
+- Lot
+	- 1 标准 lot = 100,000
+	- Lot = 风险金额 / 每标准lot损失
+- 凯利公式：
+	- f = p - q/b
+	- b 是赔率，p 是胜率，q 是败率。
+ - CAPM
+	 - 门槛收益率 or 预期收益率 = 无风险收益率 + beta \* ERP = Rf + beta \* (大盘 - Rf)
+- 总风险
+	- 系统性风险 + 非系统性风险
+- CML, Capital Market Line
+	- 总风险 - 预期收益
+- SML, Security Market Line
+	- beta 系统性风险 - 预期收益
+- Treynor 比率
+	- (Rp - Rf) / β
+	- 除以的是 beta
+- Sortino
+	- (Rp - Rf) / 下行标准差
+- Jensen's Alpha
+	- 实际收益 - CAPM 预期收益，有没有跑赢大盘
+	- $\alpha_J = R_p - [R_f + \beta_p \times (R_m - R_f)]$ =  Rp - 预期收益率

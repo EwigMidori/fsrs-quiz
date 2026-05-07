@@ -12,7 +12,7 @@ Build a mobile-only web flashcard app for exam cramming with:
 - FSRS-based scheduling with an endless cram mode
 
 ## Source Data
-- Primary deck data comes from `decks/*.json`.
+- Primary deck data comes from `.json` or `.jsonl` files under `decks/`.
 - Each file represents one deck and is discovered at startup.
 - The app must support multiple decks from day one.
 - Card content may contain MDX-flavored text, inline formula tags, and block formula tags.
@@ -49,9 +49,9 @@ Build a mobile-only web flashcard app for exam cramming with:
 - `cards[]`
 
 ### Deck File
-- `decks/<name>.json`
+- `decks/<name>.json` or `decks/<name>.jsonl`
 - One file per deck
-- Stable file name is the deck identity source
+- Stable relative file path is the deck identity source
 
 ### Card
 - `id`

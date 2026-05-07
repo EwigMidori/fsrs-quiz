@@ -114,7 +114,9 @@ export function StudyApp() {
           <CardHeader>
             <Badge>空状态</Badge>
             <CardTitle>没有可用卡册</CardTitle>
-            <CardDescription>请在 `decks/` 目录放入至少一个 deck JSON 文件。</CardDescription>
+            <CardDescription>
+              请在 `decks/` 目录放入至少一个 deck `JSON` 或 `JSONL` 文件。
+            </CardDescription>
           </CardHeader>
         </Card>
       </div>

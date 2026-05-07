@@ -1,0 +1,647 @@
+# THE UNIVERSITY OF HONG KONG
+
+# SCHOOL OF COMPUTING AND DATA SCIENCE
+
+COMP7415: Mastering the markets: Financial analytics and algorithmic trading
+
+Date: December 19, 2025
+
+Time: 6:30 p.m. - 8:30 p.m.
+
+# Instructions
+
+- The total score is 70 marks for the whole paper.   
+There are 60 multiple-choice and 1 written question in total.   
+Each multiple-choice question carries 1 mark. Please attempt to answer all the questions, as there is no penalty for incorrect answers.   
+- Ensure you read each question thoroughly before making your selection.   
+- You are permitted to bring a calculator that complies with the university's regulations. Ensure your calculator functions properly before the exam begins.   
+- Use the answer sheet (P.2-5) to mark your responses clearly.   
+- Remember to write your student number on P.1-6 for identification purposes.   
+- Before submitting your exam, double-check that you have answered all questions and filled in the answer sheets.
+
+Only approved calculators as announced by the Examinations Secretary can be used in this examination. It is candidates' responsibility to ensure that their calculator operates satisfactorily, and candidates must record the name and type of the calculator used on the front page of the examination script.
+
+University Numbers:
+
+Brand and Type of Calculator:
+
+# Answer Sheet for Multiple Choice Questions
+
+<table><tr><td>Question</td><td>Answer</td><td>Question</td><td>Answer</td><td>Question</td><td>Answer</td></tr><tr><td>1</td><td></td><td>26</td><td></td><td>51</td><td></td></tr><tr><td>2</td><td></td><td>27</td><td></td><td>52</td><td></td></tr><tr><td>3</td><td></td><td>28</td><td></td><td>53</td><td></td></tr><tr><td>4</td><td></td><td>29</td><td></td><td>54</td><td></td></tr><tr><td>5</td><td></td><td>30</td><td></td><td>55</td><td></td></tr><tr><td>6</td><td></td><td>31</td><td></td><td>56</td><td></td></tr><tr><td>7</td><td></td><td>32</td><td></td><td>57</td><td></td></tr><tr><td>8</td><td></td><td>33</td><td></td><td>58</td><td></td></tr><tr><td>9</td><td></td><td>34</td><td></td><td>59</td><td></td></tr><tr><td>10</td><td></td><td>35</td><td></td><td>60</td><td></td></tr><tr><td>11</td><td></td><td>36</td><td></td><td></td><td></td></tr><tr><td>12</td><td></td><td>37</td><td></td><td></td><td></td></tr><tr><td>13</td><td></td><td>38</td><td></td><td></td><td></td></tr><tr><td>14</td><td></td><td>39</td><td></td><td></td><td></td></tr><tr><td>15</td><td></td><td>40</td><td></td><td></td><td></td></tr><tr><td>16</td><td></td><td>41</td><td></td><td></td><td></td></tr><tr><td>17</td><td></td><td>42</td><td></td><td></td><td></td></tr><tr><td>18</td><td></td><td>43</td><td></td><td></td><td></td></tr><tr><td>19</td><td></td><td>44</td><td></td><td></td><td></td></tr><tr><td>20</td><td></td><td>45</td><td></td><td></td><td></td></tr><tr><td>21</td><td></td><td>46</td><td></td><td></td><td></td></tr><tr><td>22</td><td></td><td>47</td><td></td><td></td><td></td></tr><tr><td>23</td><td></td><td>48</td><td></td><td></td><td></td></tr><tr><td>24</td><td></td><td>49</td><td></td><td></td><td></td></tr><tr><td>25</td><td></td><td>50</td><td></td><td></td><td></td></tr></table>
+
+# Written Question 1:
+
+Consider a portfolio consisting of two assets, Asset A and Asset B. The expected returns, standard deviations, and correlation are as follows:
+
+Asset A: Expected return $= 8\%$ , Standard deviation $= 12\%$   
+Asset B: Expected return $= 6\%$ , Standard deviation $= 8\%$   
+Correlation between A and B: 0.3
+
+Assume you currently hold $50\%$ of your portfolio in Asset A and $50\%$ in Asset B.
+
+(a) Calculate the weights of Asset A and Asset B that minimize the portfolio variance. Additionally, calculate the expected return and volatility of this minimum variance portfolio. Round all answers to four decimal places. (3 marks)
+
+University Numbers:
+
+(b) Given a Risk-Free Rate of $1\%$ . Using the expected returns and standard deviations from above, determine the weights of Asset A and Asset B in the tangency portfolio. Also, calculate the expected return and volatility of the tangency portfolio. Round all answers to four decimal places. (4 marks)
+
+University Numbers:
+
+(c) Assume Transaction Cost is $0.1\%$ . Given your current holdings, analyze whether the transaction cost would influence your decision to rebalance to the tangency portfolio weights calculated above. Consider the impact of transaction costs on the potential benefits of rebalancing. (3 marks)
+
+There are 60 multiple-choice questions in total. Please mark your answers in page 2.
+
+# Question 1: What is a primary advantage of using a limit order?
+
+A) It guarantees immediate execution   
+B) It allows for price control on the order execution   
+C) It is always executed before market orders   
+D) It eliminates the risk of slippage   
+E) It can be used only for small orders
+
+# Question 2: In comparing human trading, robo-advisory, and robo-trading, which of the following statements provides the most accurate insight regarding the scalability and risk management approaches of each trading method?
+
+A) Human trading is the most scalable due to its ability to adapt strategies based on market conditions, while robo-advisory relies on limited data inputs, making it less scalable.   
+B) Both human trading and robo-advisory exhibit high scalability due to personalized strategies, while robo-trading has limited scalability because it follows predefined algorithms.   
+C) Human trading is characterized by algorithmic risk management, whereas robo-advisory and robo-trading rely solely on subjective risk assessments.   
+D) Robo-advisory systems provide the highest level of customization in risk management compared to human trading and robot-trading, which both follow rigid frameworks.   
+E) Robo-trading offers the highest scalability due to its continuous operation and algorithmic risk management, while human trading struggles with scalability due to emotional factors.
+
+# Question 3. Understanding the characteristics of financial markets is essential for designing effective trading algorithms. Which of the following market is NOT typically favored for algorithmic trading?
+
+A) Exchange-Traded Funds (ETFs)   
+B) Commodities   
+C) Bonds   
+D) Foreign Exchange   
+E) None of the above
+
+Question 4. What information does the bid-ask spread in an order book indicate?
+
+A) The total number of shares traded in a day   
+B) The difference between the highest bid and the lowest ask prices   
+C) The average price of trades over a specified period   
+D) The total market capitalization of a stock   
+E) The time elapsed since the last trade
+
+Question 5. Which of the following technical indicators is most commonly used in trend following strategies to confirm the strength of a trend?
+
+A) Standard Derivation   
+B) Moving Average Convergence Divergence (MACD)   
+C) Bollinger Bands   
+D) Relative Strength Index (RSI)   
+E) Average True Range (ATR)
+
+Question 6. Which of the following statements accurately describes the significance of a "Shooting Star" candlestick pattern?
+
+A) It indicates a strong bullish reversal after a downtrend.   
+B) It suggests a potential bearish reversal after an uptrend.   
+C) It confirms a continuation of the current trend.   
+D) It represents a consolidation phase in the market.   
+E) It signals a breakout from a trading range.
+
+Question 7. In an Order Management System (OMS), which statement most accurately highlights the distinction between an order-based system and a position-based system?
+
+A) An order-based system permits partial closures, whereas a position-based system does not.   
+B) In an order-based system, transactions are handled independently, while in a position-based system, they follow a round order process.   
+C) An order-based system design is commonly adopted by banks.   
+D) In an order-based system, transactions are processed in a round order and do not accommodate partial closures, while a position-based system enables independent transaction management and supports partial closures.   
+E) Both systems function identically and exhibit no differences in transaction management.
+
+# Question 8. Which of the following best describes a condition necessary for successful arbitrage in financial markets?
+
+A) High transaction costs that are consistently lower than potential gains   
+B) Instantaneous execution of trades across all involved markets   
+C) Market inefficiencies that persist over long periods   
+D) Correlation between asset prices that can be predicted   
+E) Sufficient liquidity to support large-scale trades without affecting prices
+
+# Question 9: A trader is analyzing two stocks, Stock A and Stock B. The following bid and ask prices are observed:
+
+• Stock A: Bid Price = $40, Ask Price = $42.1   
+Stock B: Bid Price \(= \\) 22,Ask\text{Price} = \$ 23.5\(
+
+# Calculate the percentage spread for both stocks and determine which stock has a better liquidity.
+
+A) Stock A: $2.56\%$ , Stock B: $3.30\%$ ; Stock B has a better liquidity.   
+B) Stock A: $5.12\%$ , Stock B: $6.59\%$ ; Stock A has a better liquidity.   
+C) Stock A: $2.56\%$ , Stock B: $3.30\%$ ; Stock A has a better liquidity.   
+D) Stock A: $5.12\%$ , Stock B: $6.59\%$ ; Stock B has a better liquidity.
+
+# Question 10: A data analyst needs to scrape user reviews from an online trading forum using Python. The reviews are loaded dynamically as the user scrolls down the page. The scientist considers various libraries and techniques for the task. Which of the following strategies would be the most effective for scraping all available reviews?
+
+A) Use the requests library to fetch the initial HTML content, then parse it with BeautifulSoup, as it is sufficient to extract all reviews from the website.   
+B) Utilize BeautifulSoup to dynamically fetch the page content.   
+C) Implement Selenium to simulate user scrolling, allowing all reviews to load, and then use BeautifulSoup to parse the complete page source.   
+D) Rely on the website's RSS feed to access reviews directly without further scraping techniques.   
+E) Use a headless browser with BeautifulSoup to extract data directly from the page, then write to a file without storing it into memory.
+
+Question 11: You are tasked with scraping a news website to collect the titles of the latest articles. The website has articles listed in <h2> tags within <div> elements. Given the following code snippet, which line should replace the comment at line #15 to correctly extract the article titles?
+
+```python
+1 from bs4 import BeautifulSoup  
+2 import requests  
+3  
+4 url = 'https://example.com/latest-news'  
+5 response = requests.get(url)  
+6 soup = BeautifulSoup(response.text, 'html.parser')  
+7  
+8 # Assume the articles are structured like this:  
+9 # <div class="article"><h2>Article Title 1</h2></div>  
+10 # <div class="article"><h2>Article Title 2</h2></div>  
+11 # Your task is to extract the article titles  
+12 titles = []  
+13 for article in soup.find_all('div', class='article'):  
+14 # Which line should be used here?  
+15 titles.append()  
+16  
+17 print(titles) 
+```
+
+A) article.h2.text   
+B) article.find('h2').get_text()   
+C) article.select_one('h2').string   
+D) article.h2.get('title')   
+E) article.find_all('h2')[0].text
+
+Question 12: You need to extract stock prices from a financial website that employs JavaScript to dynamically render its content. Which of the following approaches is the most effective and robust for this task?
+
+A) Employ BeautifulSoup to parse the HTML response received from the server.   
+B) Utilize the requests library to repeatedly send HTTP requests and obtain the raw HTML content.   
+C) Use lxml to parse the HTML content retrieved.   
+D) Implement Selenium to automate a web browser, allowing JavaScript execution and retrieval of dynamic content.   
+E) Leverage Scrapy to initiate a web crawl without executing JavaScript.
+
+# Question 13: Which of the following statements about short-selling in the stock market is the most accurate?
+
+A) Short-selling allows investors to profit from an increase in stock prices by borrowing shares.   
+B) Short-selling involves borrowing shares and selling them with the expectation that the stock price will decline.   
+C) Short-selling is only permitted for institutional investors and not for retail investors.   
+D) The losses from short-selling are limited to the initial investment made by the investor.   
+E) Short-selling has no impact on the overall market liquidity or stock prices.
+
+# Question 14: Which of the following designs for a database storing historical market data could potentially cause performance issues?
+
+A) Storing data in a normalized structure with separate tables for transactions, dividends, and stock splits.   
+B) Using a single, extensive Market Data Table that includes all historical records for effective data analysis.   
+C) Implementing indexing on frequently queried fields, such as stock ticker and transaction date.   
+D) Utilizing partitioning strategies based on stock categories to enhance query efficiency.   
+E) Regularly archiving old data to reduce the size of the active tables.
+
+# Question 15: In the context of a database used for algo-trading, which of the following practices is most crucial for ensuring data integrity?
+
+A) Regularly updating the database schema.   
+B) Implementing proper validation rules for data entry.   
+C) Using a single table for all financial instruments.   
+D) Allowing duplicate entries to speed up data retrieval.   
+E) Storing all data as plain text files for simplicity.
+
+# Question 16: Which of the following statements about best practices in backtesting is FALSE?
+
+A) Continuous monitoring of a trading strategy is important to adapt to changing market conditions.   
+B) Out-of-sample testing helps validate a strategy's effectiveness on data that was not used during the development phase.   
+C) Incorporating realistic assumptions about transaction costs can lead to a more accurate representation of a strategy's performance.   
+D) Once a strategy demonstrates success in backtesting, it requires no further adjustments or reviews.   
+E) Walk-forward analysis allows for ongoing validation of a strategy over time.
+
+Question 17: In the context of linear regression analysis, which of the following statements about R-squared $(\mathbf{R}^2)$ is the most accurate?
+
+A) $\mathbf{R}^2$ measures the strength of the correlation between the independent and dependent variables.   
+B) An $\mathbb{R}^2$ value of 0 indicates a perfect fit of the model to the data.   
+C) $\mathbf{R}^2$ can only take values between 0 and 1, where a higher value indicates a better fit of the model.   
+D) $\mathbf{R}^2$ is a definitive measure of the model's predictive power and should be the sole criterion for model selection.   
+E) $\mathbf{R}^2$ can decrease when adding more independent variables to the model.
+
+Question 18: Consider the following pairs of time series data for variables X and Y:   
+
+<table><tr><td>Time</td><td>X</td><td>Y</td></tr><tr><td>1</td><td>2</td><td>3</td></tr><tr><td>2</td><td>4</td><td>5</td></tr><tr><td>3</td><td>6</td><td>7</td></tr><tr><td>4</td><td>8</td><td>10</td></tr><tr><td>5</td><td>10</td><td>12</td></tr></table>
+
+Using the least squares method, what's the R-squared $(\mathbb{R}^2)$ value for the linear regression model that predicts Y based on X.
+
+A) 0.87   
+B) 0.90   
+C) 0.94   
+D) 0.96   
+E) 0.99
+
+Question 19: Which of the following statements correctly describes an assumption of a linear regression model?
+
+A) Linearity means that all independent variables are of first order.   
+B) Independence means that the residuals from the regression model should be correlated with each other.   
+C) Homoscedasticity requires that the variance of the residuals remains constant across all levels of the independent variables.   
+D) Multicollinearity implies that the independent variables are perfectly correlated with the dependent variable.   
+E) Multivariate normality mandates that the dependent variable must be normally distributed for each value of the independent variables.
+
+The following 2 questions (i.e. Questions 20-21) will base on the OLS regression results for a multiple linear regression model below.
+
+<table><tr><td colspan="7">OLS Regression Results</td></tr><tr><td>Dep. Variable:</td><td>Stock_Price</td><td>R-squared:</td><td></td><td></td><td>0.996</td><td></td></tr><tr><td>Model:</td><td>OLS</td><td>Adj. R-squared:</td><td></td><td></td><td>0.993</td><td></td></tr><tr><td>Method:</td><td>Least Squares</td><td>F-statistic:</td><td></td><td></td><td>326.1</td><td></td></tr><tr><td>Date:</td><td>Fri, 19 Dec 2025</td><td>Prob (F-statistic):</td><td></td><td></td><td>3.14e-06</td><td></td></tr><tr><td>Time:</td><td>17:30:00</td><td>Log-Likelihood:</td><td></td><td></td><td>0.38063</td><td></td></tr><tr><td>No. Observations:</td><td>10</td><td>AIC:</td><td></td><td></td><td>9.239</td><td></td></tr><tr><td>Df Residuals:</td><td>5</td><td>BIC:</td><td></td><td></td><td>10.75</td><td></td></tr><tr><td>Df Model:</td><td>4</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Covariance Type:</td><td>nonrobust</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>coef</td><td>std err</td><td>t</td><td>P&gt;|t|</td><td>[0.025</td><td>0.975]</td></tr><tr><td>const</td><td>20.6816</td><td>3.278</td><td>6.309</td><td>0.001</td><td>12.254</td><td>29.109</td></tr><tr><td>GDP</td><td>0.0037</td><td>0.002</td><td>1.554</td><td>0.181</td><td>-0.002</td><td>0.010</td></tr><tr><td>Population</td><td>5.383e-05</td><td>1.6e-05</td><td>3.356</td><td>0.020</td><td>1.26e-05</td><td>9.51e-05</td></tr><tr><td>Temperature</td><td>-0.0914</td><td>0.053</td><td>-1.729</td><td>0.144</td><td>-0.227</td><td>0.044</td></tr><tr><td>Inflation_Rate</td><td>0.8580</td><td>0.241</td><td>3.566</td><td>0.016</td><td>0.239</td><td>1.477</td></tr><tr><td>Omnibus:</td><td></td><td>1.570</td><td>Durbin-Watson:</td><td></td><td>2.394</td><td></td></tr><tr><td>Prob(Omnibus):</td><td></td><td>0.456</td><td>Jarque-Bera (JB):</td><td></td><td>0.750</td><td></td></tr><tr><td>Skew:</td><td></td><td>0.053</td><td>Prob(JB):</td><td></td><td>0.687</td><td></td></tr><tr><td>Kurtosis:</td><td></td><td>1.662</td><td>Cond. No.</td><td></td><td>1.82e+07</td><td></td></tr></table>
+
+# Question 20: Which of the following statements about the coefficients can be considered accurate?
+
+A) The constant term (intercept) is estimated to be 20.6816, indicating the expected stock price when all independent variables are zero.   
+B) The coefficient for GDP suggests that a one-unit increase in GDP is associated with a decrease in stock price.   
+C) The coefficient for Population indicates that for every additional 1 million increase in the population, the stock price is expected to increase by 5.383 units.   
+D) The coefficient for Inflation Rate shows a strong negative relationship with stock price, as indicated by its value of -0.8580.   
+E) The standard error for the GDP coefficient is 0.002, which suggests that the estimate is highly unreliable.
+
+# Question 21: Which of the following statements identifies a potential issue in the model building process based on the OLS regression results?
+
+A) The R-squared value is very high, indicating a good model fit.   
+B) The F-statistic indicates that the overall model is statistically significant.   
+C) The coefficients of independent variables are statistically significant.   
+D) The number of observations is too small given the number of parameters being estimated.   
+E) The R-squared value is too good to be true (i.e. very close to 1), indicating the existence of multi-collinearity among the variables.
+
+Question 22: When assessing the relevance of potential independent variables for inclusion in a regression model, which of the following methods is most appropriate?
+
+A) Selecting factors based solely on their correlation with the dependent variable.   
+B) Evaluating factors based on their economic or theoretical significance and their statistical significance in preliminary analyses.   
+C) Including all available variables from the dataset without further analysis.   
+D) Ignoring factors that have high p-values, regardless of their theoretical background.   
+E) Only considering factors that have a strong linear relationship with the dependent variable.
+
+Question 23: In the context of ARIMA modeling, which of the following statements correctly describes how to determine the parameters $p$ , $d$ , and $q$ ?
+
+A) The value of $p$ represents the number of non-seasonal differences needed to make the time series stationary.   
+B) The value of $d$ indicates the number of lagged observations included in the model.   
+C) The value of $q$ represents the number of non-seasonal differences needed to make the time series stationary.   
+D) The value of $d$ is determined by analyzing the autocorrelation function (ACF) for stationarity.   
+E) The value of $p$ is determined by examining the partial autocorrelation function (PACF) to identify the number of AR terms.
+
+Question 24: Which of the following statements about the Augmented Dickey-Fuller (ADF) test is correct?
+
+A) The ADF test is used to determine if a time series is stationary by testing for the presence of a unit root.   
+B) A p-value greater than 0.05 indicates that the null hypothesis (the presence of a unit root) should be rejected.   
+C) The ADF test only considers the first difference of the time series and ignores seasonal effects.   
+D) A significant negative test statistic suggests that the time series is non-stationary.   
+E) The ADF test can only be applied to time series data that has been previously differenced.
+
+Question 25: Which of the following statements correctly describes the assumptions underlying the ARIMA model?
+
+A) The residuals of the model should exhibit non-constant variance over time (heteroscedasticity).   
+B) The time series data must be stationary in mean and variance before fitting an ARIMA model.   
+C) The model assumes that all observations are independent of each other, regardless of time.   
+D) The ARIMA model does not require the residuals to be normally distributed.   
+E) The parameters of the model must be estimated without any prior information about the time series.
+
+Question 26: Suppose you derived an ARIMA(1,0,1) model for a stock price series as follows:
+
+$$
+Y _ {t} = 5 + 0. 6 \times Y _ {t - 1} + 0. 3 \times \varepsilon_ {t - 1} + \varepsilon_ {t}
+$$
+
+Given the following observations and the last observed error $\varepsilon_5$ is 0.2, what is the projected stock price on date 7.
+
+<table><tr><td>Date</td><td>Stock closing price</td></tr><tr><td>1</td><td>10.0</td></tr><tr><td>2</td><td>11.2</td></tr><tr><td>3</td><td>11.5</td></tr><tr><td>4</td><td>10.3</td></tr><tr><td>5</td><td>11.8</td></tr></table>
+
+A) 11.86   
+B) 12.08  
+C) 12.10   
+D) 12.28   
+E) 12.37
+
+Question 27: Which of the following practices is most likely to introduce look-ahead bias into a backtest?
+
+A) Using historical closing prices to make trading decisions.   
+B) Incorporating economic indicators that were released after the backtest period.   
+C) Ensuring all data used for decisions is up to the point in time being simulated.   
+D) Validating the strategy with out-of-sample testing.   
+E) Using only data available at the time of each trade decision.
+
+Question 28: Given the following daily closing prices, what is the 3-day Exponential Moving Average (EMA) on Day 5, assuming a smoothing factor of 0.5?
+
+<table><tr><td>Day</td><td>Price</td></tr><tr><td>0</td><td>100</td></tr><tr><td>1</td><td>102</td></tr><tr><td>2</td><td>105</td></tr><tr><td>3</td><td>103</td></tr><tr><td>4</td><td>104</td></tr><tr><td>5</td><td>106</td></tr></table>
+
+A) 102.67   
+B) 103.33   
+C) 104.33   
+D) 104.67   
+E) None of above
+
+Question 29: Given the following daily closing prices, calculate the estimated volatility on Day 5 using Exponentially Weighted Moving Average (EWMA) method with a discounting factor 0.94. Round your answer to 2 decimal places.
+
+<table><tr><td>Day</td><td>Price</td></tr><tr><td>0</td><td>100</td></tr><tr><td>1</td><td>102</td></tr><tr><td>2</td><td>105</td></tr><tr><td>3</td><td>103</td></tr><tr><td>4</td><td>104</td></tr><tr><td>5</td><td>106</td></tr></table>
+
+A) $0.02\%$   
+B) $0.04\%$   
+C) $2.07\%$   
+D) $4.29\%$   
+E) None of above
+
+Question 30: If a time series has a Hurst Exponent of 0.5, which of the following statements is true?
+
+A) The series is likely to produce consistent long-term trends.   
+B) The series will demonstrate random walk behavior.   
+C) The series has increasing volatility over time.   
+D) The series is stationary with unit root characteristics.   
+E) The series is expected to revert to its mean quickly.
+
+Question 31: In a mean-reverting market, the expected value of a variable $y_{t}$ is given by:
+
+$$
+E \left(y _ {t}\right) = \theta + \left(y _ {s} - \theta\right) e ^ {- \kappa (t - s)}
+$$
+
+Where:
+
+- $\theta$ is the long-term mean,   
+- $y_{s}$ is the value at time   
+$\kappa$ is the speed of mean reversion.
+
+Given that the half-life of mean reversion is defined as the time it takes for the value to revert to half the distance to the long-term mean. If the speed of mean reversion $\kappa$ is 0.05, what is the half-life of mean reversion?
+
+A) 13.86   
+B) 14.39   
+C) 15.00   
+D) 20.00   
+E) 25.00
+
+Question 32: Which of the following is NOT a characteristic of the Foreign Exchange (FX) market?
+
+A) Decentralized market   
+B) $24 \times 7$ trading hours   
+C) High turnover   
+D) Low spread   
+E) High leverage
+
+Question 33: What is a primary purpose of a currency peg, such as the USDHKD peg?
+
+A) To allow complete monetary policy autonomy for the central bank.   
+B) To stabilize the exchange rate and provide predictability for international trade.   
+C) To increase the volatility of the currency in the foreign exchange market.   
+D) To eliminate the need for market interventions by the central bank.   
+E) To enable unlimited capital flow without restrictions.
+
+# Question 34: Which of the following factors can negatively impact the execution potential of the trading strategy for USDHKD peg?
+
+A) High bid-ask spread when trading at banks.   
+B) Availability of low swap fees for long positions.   
+C) Access to high leverage trading in the Forex market.   
+D) Consistent market demand for HKD.   
+E) Predictable market trends in USD/HKD.
+
+# Question 35: In pair trading, what is the fundamental approach taken when the price spread between two correlated assets deviates from its historical mean?
+
+A) Go long on both assets simultaneously.   
+B) Buy the undervalued asset and short the overvalued asset.   
+C) Sell both assets to prevent losses.   
+D) Hold the assets until the market stabilizes.   
+E) Invest in unrelated assets to diversify risk.
+
+# Question 36: Which of the following factors could lead to a loss of cointegration properties in a pair trading strategy?
+
+A) Stable economic conditions and consistent market behavior.   
+B) Fundamental shifts in business models or product lines of one or both companies.   
+C) Increased trading volume in both assets.   
+D) Historical data showing strong price correlation.   
+E) Regular adjustments to the trading strategy based on market trends.
+
+# Question 37: A Johansen test is conducted to evaluate the cointegration relations among 3 stocks $\{Y_1, Y_2, Y_3\}$ .
+
+- Using python library "count_johansen", the critical value for trace test at $5\%$ significance level is given by [45.46, 23.66, 9.70]   
+Also, the trace statistics is calculated to be [56.59, 35.21, 8.59]
+
+# At $5\%$ significance level, how many cointegration relations can you conclude?
+
+A) 0   
+B) 1   
+C) 2   
+D) 3   
+E) Cannot be determined
+
+Question 38: What type of risk is described as the possibility of a loss resulting from a borrower's failure to repay a loan?
+
+A) Market Risk   
+B) Liquidity Risk   
+C) Interest Rate Risk   
+D) Legal Risk   
+E) Credit Risk
+
+Question 39: A young professional dreams of owning a luxury supercar, but his current income does not allow him to save enough for the purchase due to rising prices and high demand. What type of risk does this scenario illustrate?
+
+A) Market Risk   
+B) Asset Price Risk   
+C) Interest Rate Risk   
+D) Affordability Risk   
+E) No risk at all
+
+Question 40: Which of the following statements correctly distinguishes between Parametric VaR, Historical VaR, and Hypothetical VaR?
+
+A) Historical VaR calculates the maximum loss based on a normal distribution of returns, while Hypothetical VaR uses actual historical data to estimate risk. Parametric VaR is only applicable in financial markets with low volatility.   
+B) Hypothetical VaR is calculated using historical data, while Parametric VaR is derived from extreme past events, and Historical VaR requires a normal distribution for accuracy.   
+C) Parametric VaR provides a conservative estimate of risk by using historical data, while Historical VaR uses a theoretical approach and Hypothetical VaR assumes constant volatility.   
+D) Historical VaR incorporates adjustments for future market conditions, whereas Parametric VaR and Hypothetical VaR do not consider any historical data.   
+E) Parametric VaR assumes a specific distribution for returns, while Historical VaR relies solely on past return data without assuming any distribution. Hypothetical VaR calculates potential losses under extreme "what-if" scenarios based on theoretical models.
+
+Question 41: Which of the following is NOT an assumption of the CAPM?
+
+A) All investors have homogeneous expectations about asset returns   
+B) There are no taxes or transaction costs   
+C) All assets are perfectly divisible and tradable   
+D) Investors can only hold risk-free assets   
+E) Investors are rational and risk-averse
+
+The following 2 questions (i.e. Questions 42-43) will base on the scenario below.
+
+The GARCH(1,1) model with a constant mean function is defined as:
+
+$$
+\left\{ \begin{array}{c} r _ {t} = \varphi_ {0} + a _ {t} \\ a _ {t} = \sigma_ {t} \varepsilon_ {t}, w h e r e \varepsilon_ {t} f o l l o w s i. i. d s t a n d a r d N o r m a l d i s t r i b u t i o n \\ \sigma_ {t} ^ {2} = \alpha_ {0} + \alpha_ {1} a _ {t - 1} ^ {2} + \beta_ {1} \sigma_ {t - 1} ^ {2} \end{array} \right.
+$$
+
+You fit this model to a stock price series and obtain below result.
+
+<table><tr><td colspan="6">AR - GARCH Model Results</td></tr><tr><td>Dep. Variable:</td><td>(&#x27;Daily Return&#x27;, &#x27;&#x27;)</td><td>R-squared:</td><td>0.000</td><td></td><td></td></tr><tr><td>Mean Model:</td><td>AR</td><td>Adj. R-squared:</td><td>0.000</td><td></td><td></td></tr><tr><td>Vol Model:</td><td>GARCH</td><td>Log-Likelihood:</td><td>7787.28</td><td></td><td></td></tr><tr><td>Distribution:</td><td>Normal</td><td>AIC:</td><td>-15566.6</td><td></td><td></td></tr><tr><td>Method:</td><td>Maximum Likelihood</td><td>BIC:</td><td>-15542.9</td><td></td><td></td></tr><tr><td></td><td></td><td>No. Observations:</td><td>2767</td><td></td><td></td></tr><tr><td>Date:</td><td>Friday, Dec 19 2025</td><td>Df Residuals:</td><td>2766</td><td></td><td></td></tr><tr><td>Time:</td><td>17:00:00</td><td>Df Model:</td><td>1</td><td></td><td></td></tr><tr><td colspan="6">Mean Model</td></tr><tr><td>coef</td><td>std err</td><td>t</td><td>P&gt;|t|</td><td>95.0% Conf. Int.</td><td></td></tr><tr><td>Const</td><td>1.2903e-03</td><td>2.652e-04</td><td>4.866</td><td>1.138e-06</td><td>[7.706e-04,1.810e-03]</td></tr><tr><td colspan="6">Volatility Model</td></tr><tr><td>coef</td><td>std err</td><td>t</td><td>P&gt;|t|</td><td>95.0% Conf. Int.</td><td></td></tr><tr><td>omega</td><td>2.5579e-05</td><td>6.734e-07</td><td>37.987</td><td>0.000</td><td>[2.426e-05,2.690e-05]</td></tr><tr><td>alpha[1]</td><td>0.2000</td><td>4.111e-02</td><td>4.865</td><td>1.143e-06</td><td>[0.119, 0.281]</td></tr><tr><td>beta[1]</td><td>0.7000</td><td>3.135e-02</td><td>22.330</td><td>1.883e-110</td><td>[0.639, 0.761]</td></tr></table>
+
+Question 42: Given $a_{t-1} = 0.03$ and $\sigma_{t-1} = 0.02$ . What is the 2-step forecast of $\sigma_t^2$ (i.e., $\widehat{\sigma_{t+2}^2}$ )?
+
+A) 0.00011  
+B) 0.00016  
+C) 0.00038   
+D) 0.00049  
+E) None of above
+
+Question 43: What is the unconditional variance of $a_{t}$ ?
+
+A) 0.00003  
+B) 0.00008  
+C) 0.00026   
+D) 0.00032  
+E) 0.00050
+
+Question 44: What is the 1-month $99\%$ Relative VaR (Value-at-Risk) for an investment of $10,000 with a monthly return distribution $R \sim N(0.02, 0.04^2)$ ?
+
+Given that the critical values of a standard normal distribution at $1\%$ significance level are 2.32 (1 tail) and 2.57 (2 tails) respectively.
+
+A) $728   
+B) $828   
+C) $928   
+D) $9,372   
+E) $9,472
+
+Question 45: You have an account balance of \(25,000 and want to risk \(1 \%\)of your balance on each trade. You are trading HSI Index Future where the point value for a standard lot is \(\$ 50\), and you plan to set a stop- loss of 40 points. What should be the position size (in standard lots) for this trade?
+
+A) 0.75  
+B) 1.25   
+C) 2.50   
+D) 5.00  
+E) 6.25
+
+Question 46: Which of the following statements accurately describes the relationship between leverage and margin in trading?
+
+A) Margin is the total amount of money a trader has in their account, while leverage is the amount borrowed from the broker.   
+B) Higher leverage allows traders to control larger positions with less capital, increasing both potential profits and potential losses.   
+C) Using high leverage eliminates the need for a margin requirement, as traders can trade without any capital.   
+D) Leverage can only be used in forex trading but is not applicable in stock trading.   
+E) Lower margin requirements always lead to higher leverage ratios, reducing the overall risk for traders.
+
+Question 47: Which of the following statements about the beta coefficient in the Capital Asset Pricing Model (CAPM) is true?
+
+A) Beta measures total risk, including both systematic and non-systematic risks.   
+B) A beta coefficient greater than 1 indicates that the asset is less volatile than the market.   
+C) A beta of 0 means the asset's returns are perfectly correlated with the market returns.   
+D) Beta reflects the sensitivity of an asset's returns to market movements, indicating systematic risk only.   
+E) A negative beta indicates that the asset moves in the same direction as the market.
+
+Question 48: Given the daily closing price of a stock as follows. Assume risk free rate is $1\%$ . What is the Calmar ratio?
+
+<table><tr><td>Month</td><td>Price</td></tr><tr><td>1</td><td>100</td></tr><tr><td>2</td><td>95</td></tr><tr><td>3</td><td>104</td></tr><tr><td>4</td><td>102</td></tr><tr><td>5</td><td>106</td></tr><tr><td>6</td><td>103</td></tr><tr><td>7</td><td>102</td></tr><tr><td>8</td><td>105</td></tr><tr><td>9</td><td>109</td></tr><tr><td>10</td><td>116</td></tr><tr><td>11</td><td>111</td></tr><tr><td>12</td><td>114</td></tr></table>
+
+A)-3.11  
+B)-2.91   
+C) 0.91   
+D) 2.91   
+E) 3.11
+
+Question 49: An investor has the following monthly returns for their portfolio over the last 6 months:
+
+<table><tr><td>Month</td><td>Monthly Return</td></tr><tr><td>1</td><td>2.1%</td></tr><tr><td>2</td><td>1.4%</td></tr><tr><td>3</td><td>-1.3%</td></tr><tr><td>4</td><td>3.3%</td></tr><tr><td>5</td><td>0.8%</td></tr><tr><td>6</td><td>-1.7%</td></tr></table>
+
+The risk-free rate is $0.5\%$ . What is the Sortino ratio for this portfolio?
+
+A) 0.34  
+B) 0.37  
+C) 0.47   
+D) 1.18   
+E) 1.29
+
+# Question 50: Which of the following statements about the Efficient Frontier is NOT true?
+
+A) The Efficient Frontier represents a set of optimal portfolios that offer the highest expected return for a given level of risk.   
+B) Portfolios that lie below the Efficient Frontier are considered inefficient because they offer lower returns for the same level of risk.   
+C) The Efficient Frontier is curved, reflecting the diminishing marginal returns of risk.   
+D) All portfolios on the Efficient Frontier have the same Sharpe Ratio.   
+E) The Efficient Frontier can shift based on changes in market conditions or asset correlations.
+
+# Question 51: Which of the following statements accurately describes the computational complexity of the triangular/polygonal arbitrage strategy?
+
+A) The total computational complexity is generally $O(n^2)$ due to the simple pairwise comparison of exchange rates.   
+B) The complexity primarily arises from iterating through all permutations of the currencies, leading to $O(n!)$ in the worst case.   
+C) The computational cost is negligible and does not impact the execution of the arbitrage strategy.   
+D) The complexity is linear, $\mathrm{O}(\mathfrak{n})$ , as it only involves a single pass through the currency pairs.   
+E) The strategy requires constant time, $O(1)$ , as the number of currencies does not affect the calculations.
+
+# Question 52: Which of the following best describes the concept of market impact in trading?
+
+A) Market impact is the effect that a trader's order has on the price of a security and its subsequent liquidity.   
+B) Market impact refers to the total number of trades executed within a specific time frame.   
+C) Market impact only occurs when using limit orders and does not affect market orders.   
+D) Market impact is negligible in highly liquid markets and does not influence trading strategies.   
+E) Market impact is solely determined by the historical price movements of a security.
+
+Question 53: A trader wants to buy a total of 1,200 shares of a stock using the Time-Weighted Average Price (TWAP) strategy over a 30-minute period. The trader plans to execute the orders every 5 minutes. How many shares should the trader buy at each interval?
+
+A) 100 shares   
+B) 150 shares   
+C) 200 shares   
+D) 250 shares   
+E) 300 shares
+
+Question 54: Which of the following statements accurately describes a limitation of using queuing theory for modeling order books in financial markets?
+
+A) Queuing theory assumes that all orders arrive at a constant rate, which may not reflect the irregular nature of market activity.   
+B) Queuing theory can fully account for the impact of high-frequency trading strategies on market dynamics.   
+C) Queuing models can accurately predict market volatility based on historical order flow data.   
+D) Queuing theory is effective in modeling the behavior of market participants as rational agents at all times.   
+E) Queuing models do not consider the influence of external factors, such as news events or macroeconomic changes, on order flow.
+
+Question 55: In the context of using genetic algorithms for trading strategy optimization, which of the following scenarios could potentially lead to premature convergence?
+
+A) Applying a low mutation rate that limits the introduction of new genetic variations.   
+B) Utilizing a highly diverse initial population to explore a wide solution space.   
+C) Employing a fitness function that accurately reflects the trading strategy's performance.   
+D) Implementing elitism, which retains the best solutions across generations.   
+E) Conducting extensive crossover operations that mix genetic information between individuals.
+
+Question 56: Which of the following scenarios exemplifies the use of supervised learning in algorithmic trading?
+
+A) Grouping stocks based on their historical price movements to identify trends.   
+B) Training a model to explore different trading strategies without labelled outcomes.   
+C) Predicting the future price of a stock based on its past patterns.   
+D) Identifying unusual trading patterns based on market sentiments.   
+E) Using reinforcement learning to maximize cumulative rewards in trading decisions.
+
+Question 57: Consider a trading scenario where an agent can take three actions: Buy (1), Sell (2), or Hold (0). After taking the action to Buy, the agent receives a reward of $50. The Q-learning update formula is as follows:
+
+$$
+Q (s, a) \gets Q (s, a) + \alpha [ r + \gamma \max _ {a ^ {\prime}} (Q (s ^ {\prime}, a ^ {\prime})) - Q (s, a) ]
+$$
+
+If the current Q-value for the state-action pair $\mathbf{Q}(1,1)$ (State 1, Action Buy) is 10, the learning rate $\alpha$ is 0.1, the discount factor $\gamma$ is 0.9, and the maximum Q-value for the next state $s^{\prime}$ after the action is 30, what will be the updated Q-value for $\mathrm{Q}(1,1)$ ?
+
+A) 10.1   
+B) 14.8   
+C) 16.7   
+D) 21.4   
+E) 23.0
+
+Question 58: Which of the following is a significant limitation of Q-learning when applied to trading environments?
+
+A) It can easily adapt to changing market conditions without any modifications.   
+B) It assumes a stationary environment, which may lead to outdated policies as market conditions evolve.   
+C) It requires a minimal amount of computational power for training.   
+D) It effectively generalizes strategies across different market scenarios.   
+E) It does not require any exploration of the action space to learn optimal strategies.
+
+Question 59: A trading analyst is using k-means clustering to segment a set of historical stock returns into distinct groups based on their performance characteristics. The analyst decides to use $\mathbf{k} = 3$ clusters. After running the algorithm, the following centroids for the clusters are obtained:
+
+- Cluster 1 centroid: (0.05, 0.02)   
+- Cluster 2 centroid: (0.10, 0.07)   
+- Cluster 3 centroid: (0.15, 0.12)
+
+If a new stock has a return of (0.12, 0.08), based on Euclidean distance measure, which cluster will this stock most likely be assigned to?
+
+A) Cluster 1   
+B) Cluster 2   
+C) Cluster 3   
+D) None of the clusters   
+E) It cannot be determined without additional information
+
+# Question 60: An investor evaluates two funds, Fund A and Fund B, over a 5-year period with the following characteristics:
+
+# Fund A:
+
+Average annual return: $12\%$   
+Average annual risk-free return: $3\%$   
+Standard deviation of returns: $10\%$   
+Beta: 1.2   
+Downside deviation: $6\%$   
+Average return of benchmark: $10\%$
+
+# Fund B:
+
+Average annual return: $8\%$   
+Average annual risk-free return: $3\%$   
+Standard deviation of returns: $4\%$   
+Beta: 0.5   
+Downside deviation: $2\%$   
+Average return of benchmark: $6\%$
+
+# Which of the following statements about Fund A and Fund B is TRUE?
+
+A) Fund A has a higher Sharpe Ratio than Fund B.   
+B) Jensen's Alpha for Fund A is greater than that for Fund B.   
+C) The Information Ratio for both funds is the same.   
+D) Fund A has a higher Sortino Ratio than Fund B.   
+E) Fund A has a lower Treynor Ratio than Fund B.
+
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*

@@ -31,7 +31,6 @@ test-results
 
 # Local-only source material / agent notes
 AGENTS.md
-exam2.txt
-raw2.txt
+/exam2.txt
+/raw2.txt
 src/assets/
-decks/exam2.json

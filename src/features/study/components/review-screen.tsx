@@ -1,4 +1,5 @@
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, CheckCircle2, PencilLine } from 'lucide-react'
+import { useMemo, useState } from 'react'
 import type { Grade } from 'ts-fsrs'
 
 import { MdxContent } from '@/components/mdx-content'
@@ -21,6 +22,218 @@ import {
   type ReviewPreview,
 } from '../lib/review-options'
 import { useReviewKeyboardShortcuts } from '../hooks/use-review-keyboard-shortcuts'
+import {
+  compareFillBlankValue,
+  extractAnswerMap,
+  extractFillBlankDescriptors,
+} from '../lib/fill-blanks'
+
+function InteractiveBlank({
+  blankId,
+  active,
+  value,
+  result,
+  onActivate,
+  onChange,
+  onSubmit,
+}: {
+  blankId: string
+  active: boolean
+  value: string
+  result?: boolean
+  onActivate: () => void
+  onChange: (value: string) => void
+  onSubmit: (value: string) => void
+}) {
+  if (active) {
+    return (
+      <input
+        autoFocus
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        onBlur={(event) => onSubmit(event.currentTarget.value)}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') {
+            event.preventDefault()
+            onSubmit(event.currentTarget.value)
+          }
+        }}
+        className="mx-1 inline-flex min-w-24 rounded-[0.95rem] border border-[color:var(--ink)]/18 bg-white px-3 py-1.5 align-middle text-sm font-medium text-[color:var(--ink)] shadow-sm outline-none ring-0"
+        placeholder={`填空 ${blankId}`}
+        data-testid={`fill-blank-input-${blankId}`}
+      />
+    )
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={onActivate}
+      className={cn(
+        'mx-1 inline-flex min-w-24 items-center justify-center rounded-[0.95rem] border border-dashed px-3 py-1.5 align-middle text-[11px] font-semibold uppercase tracking-[0.18em] shadow-sm transition-colors',
+        result === true
+          ? 'border-emerald-300 bg-[rgba(167,229,211,0.3)] text-[#145446]'
+          : result === false
+            ? 'border-rose-300 bg-[rgba(232,184,196,0.2)] text-[#7c243d]'
+            : 'border-[color:var(--hairline-strong)] bg-white text-[color:var(--muted)] hover:border-[color:var(--ink)]/18 hover:text-[color:var(--ink)]',
+      )}
+      data-testid={`fill-blank-${blankId}`}
+    >
+      {value.trim() ? value : `填空 ${blankId}`}
+    </button>
+  )
+}
+
+function FillBlankSupport({
+  frontSource,
+  backSource,
+}: {
+  frontSource: string
+  backSource: string
+}) {
+  const blankDescriptors = useMemo(
+    () => extractFillBlankDescriptors(frontSource),
+    [frontSource],
+  )
+  const answerMap = useMemo(() => extractAnswerMap(backSource), [backSource])
+  const [blankValues, setBlankValues] = useState<Record<string, string>>(
+    () => Object.fromEntries(blankDescriptors.map((blank) => [blank.id, ''])),
+  )
+  const [activeBlankId, setActiveBlankId] = useState<string | null>(null)
+  const [blankResults, setBlankResults] = useState<Record<string, boolean> | null>(null)
+
+  if (!blankDescriptors.length) {
+    return (
+      <div data-testid="review-front">
+        <MdxContent
+          source={frontSource}
+          className="text-[16px] leading-8 sm:text-[18px] sm:leading-8"
+        />
+      </div>
+    )
+  }
+
+  const checkedCount = blankResults ? Object.keys(blankResults).length : null
+  const correctCount = blankResults
+    ? Object.values(blankResults).filter(Boolean).length
+    : null
+  const totalCheckableBlanks = blankDescriptors.filter((blank) => answerMap.has(blank.id)).length
+
+  function clearBlankResult(blankId: string) {
+    setBlankResults((current) => {
+      if (!current || !(blankId in current)) {
+        return current
+      }
+
+      const nextResults = { ...current }
+      delete nextResults[blankId]
+
+      return Object.keys(nextResults).length ? nextResults : null
+    })
+  }
+
+  function submitBlank(blankId: string, value: string) {
+    setActiveBlankId(null)
+
+    const expected = answerMap.get(blankId)
+
+    if (!expected) {
+      return
+    }
+
+    setBlankResults((current) => ({
+      ...(current ?? {}),
+      [blankId]: compareFillBlankValue(value, expected),
+    }))
+  }
+
+  function checkBlankAnswers() {
+    const nextResults: Record<string, boolean> = {}
+
+    for (const blank of blankDescriptors) {
+      const expected = answerMap.get(blank.id)
+
+      if (!expected) {
+        continue
+      }
+
+      nextResults[blank.id] = compareFillBlankValue(blankValues[blank.id] ?? '', expected)
+    }
+
+    setBlankResults(nextResults)
+    setActiveBlankId(null)
+  }
+
+  return (
+    <>
+      <div data-testid="review-front">
+        <MdxContent
+          source={frontSource}
+          className="text-[16px] leading-8 sm:text-[18px] sm:leading-8"
+          components={{
+            Blank: ({ id }: { id?: string }) => {
+              const blankId = id ?? '1'
+
+              return (
+                <InteractiveBlank
+                  blankId={blankId}
+                  active={activeBlankId === blankId}
+                  value={blankValues[blankId] ?? ''}
+                  result={blankResults?.[blankId]}
+                  onActivate={() => setActiveBlankId(blankId)}
+                  onChange={(value) => {
+                    setBlankValues((current) => ({
+                      ...current,
+                      [blankId]: value,
+                    }))
+                    clearBlankResult(blankId)
+                  }}
+                  onSubmit={(value) => submitBlank(blankId, value)}
+                />
+              )
+            },
+          }}
+        />
+      </div>
+
+      <div className="mt-3 rounded-[1.35rem] border border-[color:var(--hairline)] bg-white/82 px-4 py-3">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="space-y-1">
+            <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[color:var(--muted)]">
+              <PencilLine className="size-3.5" />
+              填空自检
+            </div>
+            <p className="text-xs leading-5 text-[color:var(--body)]">
+              点击题面空白进入输入模式。核对结果只做参考，不会替你点击评分按钮。
+            </p>
+          </div>
+
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            onClick={checkBlankAnswers}
+            data-testid="check-fill-blanks"
+          >
+            <CheckCircle2 className="size-4" />
+            核对答案
+          </Button>
+        </div>
+
+        {blankResults ? (
+          <div
+            className="mt-3 rounded-[1rem] border border-[color:var(--hairline)] bg-[color:var(--canvas-soft)] px-3 py-2 text-sm text-[color:var(--ink)]"
+            data-testid="fill-blank-result"
+          >
+            {totalCheckableBlanks
+              ? `已核对 ${checkedCount}/${totalCheckableBlanks} 个空，其中 ${correctCount} 个正确。`
+              : '这张卡暂时没有可核对的标准答案。'}
+          </div>
+        ) : null}
+      </div>
+    </>
+  )
+}
 
 export function ReviewScreen({
   activeDeck,
@@ -119,12 +332,11 @@ export function ReviewScreen({
               <span>题目</span>
               <span className="h-px flex-1 bg-[color:var(--hairline)]" />
             </div>
-            <div data-testid="review-front">
-              <MdxContent
-                source={currentCard.front}
-                className="text-[16px] leading-8 sm:text-[18px] sm:leading-8"
-              />
-            </div>
+            <FillBlankSupport
+              key={currentCard.id}
+              frontSource={currentCard.front}
+              backSource={currentCard.back}
+            />
           </div>
 
           <SessionVisualizer

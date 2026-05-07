@@ -19,7 +19,7 @@ npm run validate:mdx
 
 ## Deck Content
 
-- Decks live in `decks/*.json`.
+- Decks live under `decks/` as `.json` or `.jsonl` files.
 - `front` and `back` are MDX strings.
 - Formulas should be wrapped with `InlineFormula` or `BlockFormula`.
 - Run `npm run validate:mdx` after editing any deck.

@@ -11,15 +11,28 @@ const __dirname = path.dirname(__filename)
 const repoRoot = path.resolve(__dirname, '..')
 const decksDir = path.join(repoRoot, 'decks')
 
+const DECK_FILE_RE = /\.(json|jsonl)$/i
 const FORMULA_TAG_RE = /<(InlineFormula|BlockFormula)>([\s\S]*?)<\/\1>/g
 
-async function loadDeckFiles() {
-  const entries = await readdir(decksDir, { withFileTypes: true })
+async function loadDeckFiles(dir = decksDir) {
+  const entries = await readdir(dir, { withFileTypes: true })
+  const nested = await Promise.all(
+    entries.map(async (entry) => {
+      const entryPath = path.join(dir, entry.name)
 
-  return entries
-    .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
-    .map((entry) => path.join(decksDir, entry.name))
-    .sort()
+      if (entry.isDirectory()) {
+        return loadDeckFiles(entryPath)
+      }
+
+      if (entry.isFile() && DECK_FILE_RE.test(entry.name)) {
+        return [entryPath]
+      }
+
+      return []
+    }),
+  )
+
+  return nested.flat().sort()
 }
 
 function rewriteFormulaTags(source) {
@@ -88,6 +101,47 @@ function validateDeckShape(deck, filePath) {
   }
 }
 
+function parseJsonlDeck(raw, filePath) {
+  const cards = []
+  const lines = raw.split(/\r?\n/)
+
+  for (const [index, line] of lines.entries()) {
+    const trimmed = line.trim()
+
+    if (!trimmed) {
+      continue
+    }
+
+    try {
+      const card = JSON.parse(trimmed)
+
+      if (!card || typeof card !== 'object' || Array.isArray(card)) {
+        throw new Error('card line must be a JSON object')
+      }
+
+      cards.push(card)
+    } catch (error) {
+      throw new Error(`${filePath}:${index + 1}: JSONL parse failed\n${formatError(error)}`, {
+        cause: error,
+      })
+    }
+  }
+
+  return { cards }
+}
+
+function parseDeckFile(raw, relativePath) {
+  if (relativePath.endsWith('.jsonl')) {
+    const deck = parseJsonlDeck(raw, relativePath)
+    validateDeckShape(deck, relativePath)
+    return deck
+  }
+
+  const deck = JSON.parse(raw)
+  validateDeckShape(deck, relativePath)
+  return deck
+}
+
 async function main() {
   const deckFiles = await loadDeckFiles()
   const failures = []
@@ -103,10 +157,9 @@ async function main() {
     let deck
 
     try {
-      deck = JSON.parse(raw)
-      validateDeckShape(deck, relativePath)
+      deck = parseDeckFile(raw, relativePath)
     } catch (error) {
-      failures.push(`${relativePath}: JSON parse failed\n${formatError(error)}`)
+      failures.push(formatError(error))
       continue
     }
 

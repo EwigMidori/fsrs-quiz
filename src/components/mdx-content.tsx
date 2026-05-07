@@ -112,7 +112,7 @@ function BlockFormula({
 function Blank({ id }: { id?: string }) {
   return (
     <span className="mx-1 inline-flex min-w-24 items-center justify-center rounded-[0.95rem] border border-dashed border-[color:var(--hairline-strong)] bg-white px-3 py-1.5 align-middle text-[11px] font-semibold uppercase tracking-[0.18em] text-[color:var(--muted)] shadow-sm">
-      Blank {id ?? '?'}
+      填空 {id ?? '?'}
     </span>
   )
 }
@@ -186,6 +186,8 @@ const mdxComponents = {
   Answer,
 }
 
+type MdxComponentMap = Record<string, React.ComponentType<Record<string, unknown>>>
+
 async function compileMdx(source: string) {
   const module = await evaluate(rewriteFormulaTags(source), {
     ...runtime,
@@ -199,9 +201,11 @@ async function compileMdx(source: string) {
 export function MdxContent({
   source,
   className,
+  components,
 }: {
   source: string
   className?: string
+  components?: MdxComponentMap
 }) {
   const cachedEntry = mdxCache.get(source) ?? null
   const cachedContent =
@@ -271,7 +275,7 @@ export function MdxContent({
 
   return (
     <div className={cn('space-y-3 text-[color:var(--body-strong)]', className)}>
-      <Content components={mdxComponents} />
+      <Content components={components ? { ...mdxComponents, ...components } : mdxComponents} />
     </div>
   )
 }

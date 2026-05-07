@@ -2,14 +2,14 @@
 
 Mobile-first FSRS flashcards for exam cramming.
 
-Examhacker is a React + TypeScript + Vite web app for studying structured decks stored as JSON files. Cards are rendered as MDX, support inline/block formulas, and persist review state locally with IndexedDB. Normal mode follows FSRS due dates; cram mode ignores due dates and keeps cycling cards indefinitely.
+Examhacker is a React + TypeScript + Vite web app for studying structured decks stored as JSON or JSONL files. Cards are rendered as MDX, support inline/block formulas, and persist review state locally with IndexedDB. Normal mode follows FSRS due dates; cram mode ignores due dates and keeps cycling cards indefinitely.
 
 ## Features
 
 - FSRS scheduling with normal and endless cram modes
 - MDX-powered card content
 - KaTeX-ready `InlineFormula` and `BlockFormula` content
-- Multi-deck loading from `decks/*.json`
+- Multi-deck loading from `decks/**/*.json` and `decks/**/*.jsonl`
 - IndexedDB persistence for review state and study history
 - Mobile-first UI
 
@@ -45,13 +45,13 @@ npm run preview
 
 `npm run validate:mdx` checks:
 
-- deck JSON structure
+- deck JSON / JSONL structure
 - MDX syntax in every `front` and `back`
 - KaTeX syntax inside every `InlineFormula` and `BlockFormula`
 
 ## Deck Format
 
-Decks are discovered from `decks/*.json`.
+Decks are discovered recursively from `decks/` and may use `.json` or `.jsonl`.
 
 ```json
 {
@@ -68,6 +68,13 @@ Decks are discovered from `decks/*.json`.
     }
   ]
 }
+```
+
+`JSONL` decks store one card object per non-empty line and use the file path as the deck identity. Example:
+
+```jsonl
+{"id":"card_01","topic":"CAPM","tags":["finance"],"front":"CAPM 公式是什么？","back":"<BlockFormula>E(R_i) = R_f + \\beta_i(E(R_m)-R_f)</BlockFormula>"}
+{"id":"card_02","topic":"Sharpe ratio","tags":["finance"],"front":"Sharpe ratio 衡量什么？","back":"风险调整后收益。"}
 ```
 
 ## Project Structure

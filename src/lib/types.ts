@@ -14,7 +14,7 @@ export interface DeckFile {
   deck_name?: string
   language?: string
   source?: string
-  cards?: Flashcard[]
+  cards?: Partial<Flashcard>[]
 }
 
 export interface Deck {
