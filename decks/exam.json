@@ -1,0 +1,692 @@
+{
+  "deck_name": "exam1",
+  "language": "en",
+  "source": "raw2.txt",
+  "cards": [
+    {
+      "id": "q01",
+      "topic": "market order",
+      "tags": [
+        "market-order",
+        "execution"
+      ],
+      "front": "A market order's main drawback is <Blank id=\"1\"></Blank> in volatile markets.",
+      "back": "<Answer id=\"1\">slippage</Answer>"
+    },
+    {
+      "id": "q02",
+      "topic": "arbitrage",
+      "tags": [
+        "arbitrage",
+        "pricing"
+      ],
+      "front": "Arbitrage exploits price <Blank id=\"1\"></Blank> between markets or instruments.",
+      "back": "<Answer id=\"1\">differences</Answer>"
+    },
+    {
+      "id": "q03",
+      "topic": "backtesting",
+      "tags": [
+        "backtesting",
+        "strategy"
+      ],
+      "front": "Backtesting checks a strategy against <Blank id=\"1\"></Blank> data.",
+      "back": "<Answer id=\"1\">historical data</Answer>"
+    },
+    {
+      "id": "q04",
+      "topic": "cumulative book",
+      "tags": [
+        "order-book",
+        "liquidity"
+      ],
+      "front": "The cumulative book shows the <Blank id=\"1\"></Blank> quantity of orders at each price level.",
+      "back": "<Answer id=\"1\">total</Answer>"
+    },
+    {
+      "id": "q05",
+      "topic": "short selling",
+      "tags": [
+        "short-selling",
+        "trading"
+      ],
+      "front": "Short selling means borrowing shares, selling now, and buying them back <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">later at a lower price</Answer>"
+    },
+    {
+      "id": "q06",
+      "topic": "top of book",
+      "tags": [
+        "order-book",
+        "quotes"
+      ],
+      "front": "Top of the book means the highest <Blank id=\"1\"></Blank> and the lowest <Blank id=\"2\"></Blank>.",
+      "back": "- <Answer id=\"1\">bid</Answer>\n- <Answer id=\"2\">ask</Answer>"
+    },
+    {
+      "id": "q07",
+      "topic": "arbitrage",
+      "tags": [
+        "arbitrage",
+        "execution"
+      ],
+      "front": "Successful arbitrage needs <Blank id=\"1\"></Blank> and access to multiple markets.",
+      "back": "<Answer id=\"1\">speed</Answer>"
+    },
+    {
+      "id": "q08",
+      "topic": "algo trading",
+      "tags": [
+        "algorithmic-trading"
+      ],
+      "front": "Algorithmic trading has two core parts: decision-making and <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">order execution</Answer>"
+    },
+    {
+      "id": "q09",
+      "topic": "bid-ask spread",
+      "tags": [
+        "liquidity",
+        "quotes"
+      ],
+      "front": "A smaller bid-ask spread usually means greater <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">liquidity</Answer>"
+    },
+    {
+      "id": "q10",
+      "topic": "bid-ask spread",
+      "tags": [
+        "liquidity",
+        "calculation"
+      ],
+      "front": "Stock A has bid 30 and ask 32; Stock B has bid 25 and ask 27. Their percentage spreads are <Blank id=\"1\"></Blank> and <Blank id=\"2\"></Blank>, and the more liquid stock is <Blank id=\"3\"></Blank>.",
+      "back": "- <Answer id=\"1\">A: 6.45%</Answer>\n- <Answer id=\"2\">B: 7.69%</Answer>\n- <Answer id=\"3\">Stock A</Answer>"
+    },
+    {
+      "id": "q11",
+      "topic": "web scraping",
+      "tags": [
+        "scraping",
+        "python"
+      ],
+      "front": "For dynamic pages, use <Blank id=\"1\"></Blank> to scroll/load content before parsing with BeautifulSoup.",
+      "back": "<Answer id=\"1\">Selenium</Answer>"
+    },
+    {
+      "id": "q12",
+      "topic": "web scraping",
+      "tags": [
+        "scraping",
+        "bot-detection"
+      ],
+      "front": "To reduce IP blocking, randomize user agents and add <Blank id=\"1\"></Blank> between requests.",
+      "back": "<Answer id=\"1\">delays</Answer>"
+    },
+    {
+      "id": "q13",
+      "topic": "BeautifulSoup",
+      "tags": [
+        "scraping",
+        "python"
+      ],
+      "front": "To extract the stock symbol from a row with class `symbol`, use <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">`row.find('td', {'class': 'symbol'}).text`</Answer>"
+    },
+    {
+      "id": "q14",
+      "topic": "web scraping",
+      "tags": [
+        "scraping",
+        "limitations"
+      ],
+      "front": "A key web-scraping limitation is that sites can block scraping with <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">CAPTCHAs</Answer>"
+    },
+    {
+      "id": "q15",
+      "topic": "database design",
+      "tags": [
+        "database",
+        "performance"
+      ],
+      "front": "A single huge market-data table without partitioning can cause <Blank id=\"1\"></Blank> issues.",
+      "back": "<Answer id=\"1\">performance</Answer>"
+    },
+    {
+      "id": "q16",
+      "topic": "data cleaning",
+      "tags": [
+        "backtesting",
+        "data-quality"
+      ],
+      "front": "Data cleaning matters because it improves data quality and <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">consistency</Answer>"
+    },
+    {
+      "id": "q17",
+      "topic": "algo trading lifecycle",
+      "tags": [
+        "workflow",
+        "backtesting"
+      ],
+      "front": "The false lifecycle statement is that real trading happens without prior <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">testing</Answer>"
+    },
+    {
+      "id": "q18",
+      "topic": "candlestick",
+      "tags": [
+        "charting"
+      ],
+      "front": "A candlestick body shows open-close; the wicks show <Blank id=\"1\"></Blank> and <Blank id=\"2\"></Blank>.",
+      "back": "- <Answer id=\"1\">high</Answer>\n- <Answer id=\"2\">low</Answer>"
+    },
+    {
+      "id": "q19",
+      "topic": "data cleaning",
+      "tags": [
+        "data-quality"
+      ],
+      "front": "The false data-cleaning statement is that duplicated records should always be <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">kept</Answer>"
+    },
+    {
+      "id": "q20",
+      "topic": "EMA",
+      "tags": [
+        "technical-analysis"
+      ],
+      "front": "With prices 10, 12, 14, 16, 18, the 3-day EMA for day 5 (smoothing 0.5) is <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">16</Answer>"
+    },
+    {
+      "id": "q21",
+      "topic": "overfitting",
+      "tags": [
+        "backtesting",
+        "model-risk"
+      ],
+      "front": "A sign of overfitting is strong backtest results but poor <Blank id=\"1\"></Blank> performance.",
+      "back": "<Answer id=\"1\">live</Answer>"
+    },
+    {
+      "id": "q22",
+      "topic": "survivorship bias",
+      "tags": [
+        "backtesting",
+        "bias"
+      ],
+      "front": "Survivorship bias means only <Blank id=\"1\"></Blank> assets are kept in the sample.",
+      "back": "<Answer id=\"1\">successful</Answer>"
+    },
+    {
+      "id": "q23",
+      "topic": "linear regression",
+      "tags": [
+        "regression",
+        "assumptions"
+      ],
+      "front": "A linear regression assumption that is NOT required is that independent variables be highly <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">correlated</Answer>"
+    },
+    {
+      "id": "q24",
+      "topic": "R-squared",
+      "tags": [
+        "regression",
+        "fit"
+      ],
+      "front": "Using actual values [3, 4, 5, 6, 7] and predictions [2.5, 3.8, 4.2, 5.1, 6.3], the R-squared value is about <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">0.78</Answer>"
+    },
+    {
+      "id": "q25",
+      "topic": "OLS",
+      "tags": [
+        "regression",
+        "significance"
+      ],
+      "front": "At the 0.05 level, GDP, Interest Rate, and Inflation Rate are all <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">statistically significant</Answer>"
+    },
+    {
+      "id": "q26",
+      "topic": "OLS",
+      "tags": [
+        "regression",
+        "coefficients"
+      ],
+      "front": "In the OLS table, all coefficient interpretations are <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">correct</Answer>"
+    },
+    {
+      "id": "q27",
+      "topic": "OLS",
+      "tags": [
+        "regression",
+        "multicollinearity"
+      ],
+      "front": "A potential issue in the OLS model is <Blank id=\"1\"></Blank> among the variables.",
+      "back": "<Answer id=\"1\">multicollinearity</Answer>"
+    },
+    {
+      "id": "q28",
+      "topic": "linear regression",
+      "tags": [
+        "forecasting"
+      ],
+      "front": "Extrapolating the fitted line to X = 6 gives Y ≈ <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">21.1</Answer>"
+    },
+    {
+      "id": "q29",
+      "topic": "ARIMA",
+      "tags": [
+        "time-series"
+      ],
+      "front": "In ARIMA, the I component stands for <Blank id=\"1\"></Blank> and is used to make the series stationary.",
+      "back": "<Answer id=\"1\">differencing</Answer>"
+    },
+    {
+      "id": "q30",
+      "topic": "ARIMA",
+      "tags": [
+        "time-series",
+        "identification"
+      ],
+      "front": "In ARIMA, p is identified from the <Blank id=\"1\"></Blank> plot.",
+      "back": "<Answer id=\"1\">PACF</Answer>"
+    },
+    {
+      "id": "q31",
+      "topic": "stationarity",
+      "tags": [
+        "time-series"
+      ],
+      "front": "A random walk is a <Blank id=\"1\"></Blank> time series.",
+      "back": "<Answer id=\"1\">non-stationary</Answer>"
+    },
+    {
+      "id": "q32",
+      "topic": "AR model",
+      "tags": [
+        "time-series",
+        "forecasting"
+      ],
+      "front": "For <BlockFormula>Y_t = 12 + 0.2Y_{t-1} - 0.35Y_{t-2}</BlockFormula>, the forecast for date 7 is about <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">9.8</Answer>"
+    },
+    {
+      "id": "q33",
+      "topic": "Hurst exponent",
+      "tags": [
+        "time-series"
+      ],
+      "front": "A Hurst exponent of 0.3 suggests the series is likely to <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">revert to its mean quickly</Answer>"
+    },
+    {
+      "id": "q34",
+      "topic": "Hurst exponent",
+      "tags": [
+        "time-series",
+        "calculation"
+      ],
+      "front": "From <BlockFormula>\\mathrm{Var}(20) / \\mathrm{Var}(10) = 4</BlockFormula> under <InlineFormula>\\mathrm{Var}(\\tau) \\sim \\tau^{2H}</InlineFormula>, the Hurst exponent is <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">1.0</Answer>"
+    },
+    {
+      "id": "q35",
+      "topic": "mean reversion",
+      "tags": [
+        "time-series",
+        "calculation"
+      ],
+      "front": "If the mean-reversion speed is <InlineFormula>\\kappa = 0.1</InlineFormula>, the half-life is about <Blank id=\"1\"></Blank> days.",
+      "back": "<Answer id=\"1\">6.93</Answer>"
+    },
+    {
+      "id": "q36",
+      "topic": "Martingale",
+      "tags": [
+        "betting",
+        "risk"
+      ],
+      "front": "Martingale betting often requires <Blank id=\"1\"></Blank> capital to survive losses.",
+      "back": "<Answer id=\"1\">unlimited</Answer>"
+    },
+    {
+      "id": "q37",
+      "topic": "rollover swap",
+      "tags": [
+        "fx",
+        "swap"
+      ],
+      "front": "Rollover swap is the interest on the currency bought minus the interest on the currency <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">sold</Answer>"
+    },
+    {
+      "id": "q38",
+      "topic": "statistical arbitrage",
+      "tags": [
+        "arbitrage",
+        "strategy"
+      ],
+      "front": "Statistical arbitrage aims to exploit statistical <Blank id=\"1\"></Blank> in asset prices.",
+      "back": "<Answer id=\"1\">mispricings</Answer>"
+    },
+    {
+      "id": "q39",
+      "topic": "pair trading",
+      "tags": [
+        "cointegration",
+        "risk"
+      ],
+      "front": "A key pair-trading risk is that fundamentals change and the spread stops <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">mean-reverting</Answer>"
+    },
+    {
+      "id": "q40",
+      "topic": "cointegration",
+      "tags": [
+        "time-series",
+        "correlation"
+      ],
+      "front": "Cointegration implies a long-term <Blank id=\"1\"></Blank> relation, while correlation measures linear <Blank id=\"2\"></Blank>.",
+      "back": "- <Answer id=\"1\">equilibrium</Answer>\n- <Answer id=\"2\">association</Answer>"
+    },
+    {
+      "id": "q41",
+      "topic": "distance measures",
+      "tags": [
+        "vecm",
+        "distance"
+      ],
+      "front": "For market prices [12.0, 25.0, 56.0] and predicted prices [9.1, 28.8, 64.3], the Manhattan distance is <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">15.0</Answer>"
+    },
+    {
+      "id": "q42",
+      "topic": "liquidity risk",
+      "tags": [
+        "risk"
+      ],
+      "front": "Liquidity risk shows up when you need to sell fast but must cut the price <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">significantly</Answer>"
+    },
+    {
+      "id": "q43",
+      "topic": "housing risk",
+      "tags": [
+        "risk"
+      ],
+      "front": "When housing prices rise faster than salaries, the best label is <Blank id=\"1\"></Blank> risk.",
+      "back": "<Answer id=\"1\">housing</Answer>"
+    },
+    {
+      "id": "q44",
+      "topic": "ARCH",
+      "tags": [
+        "volatility",
+        "forecasting"
+      ],
+      "front": "Using <InlineFormula>\\omega = 5.528 \\times 10^{-4}</InlineFormula>, <InlineFormula>\\alpha_1 = 0.315</InlineFormula>, <InlineFormula>\\alpha_2 = 0.205</InlineFormula>, <InlineFormula>a_{t-1} = 0.04</InlineFormula>, and <InlineFormula>a_{t-2} = -0.03</InlineFormula>, the 2-step variance forecast is about <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">0.00121</Answer>"
+    },
+    {
+      "id": "q45",
+      "topic": "ARCH",
+      "tags": [
+        "volatility",
+        "forecasting"
+      ],
+      "front": "For the same ARCH(2) model, the unconditional variance of a_t is about <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">0.00115</Answer>"
+    },
+    {
+      "id": "q46",
+      "topic": "volatility",
+      "tags": [
+        "garch",
+        "time-series"
+      ],
+      "front": "Time-varying volatility is commonly modeled with <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">GARCH</Answer>"
+    },
+    {
+      "id": "q47",
+      "topic": "ARCH/GARCH",
+      "tags": [
+        "volatility",
+        "model-limitations"
+      ],
+      "front": "A drawback of ARCH/GARCH is that they may <Blank id=\"1\"></Blank> low volatility after big shocks.",
+      "back": "<Answer id=\"1\">over-predict</Answer>"
+    },
+    {
+      "id": "q48",
+      "topic": "VaR",
+      "tags": [
+        "risk",
+        "tail-risk"
+      ],
+      "front": "Value at Risk measures the maximum potential <Blank id=\"1\"></Blank> at a chosen confidence level.",
+      "back": "<Answer id=\"1\">loss</Answer>"
+    },
+    {
+      "id": "q49",
+      "topic": "VaR",
+      "tags": [
+        "risk",
+        "calculation"
+      ],
+      "front": "With <InlineFormula>R \\sim N(0.01, 0.05^2)</InlineFormula> and <InlineFormula>W_0 = 10{,}000</InlineFormula>, the 1-month 95% VaR is <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">722.5</Answer>"
+    },
+    {
+      "id": "q50",
+      "topic": "position sizing",
+      "tags": [
+        "risk",
+        "position-sizing"
+      ],
+      "front": "The sizing method that rescales trade size with account balance is <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">Balance Rescaling</Answer>"
+    },
+    {
+      "id": "q51",
+      "topic": "position sizing",
+      "tags": [
+        "risk",
+        "calculation"
+      ],
+      "front": "With an account balance of 15,000, risk per trade of 2%, pip value of $10 per standard lot, and a 40-pip stop-loss, the position size is <Blank id=\"1\"></Blank> standard lots.",
+      "back": "<Answer id=\"1\">0.75</Answer>"
+    },
+    {
+      "id": "q52",
+      "topic": "Kelly criterion",
+      "tags": [
+        "position-sizing",
+        "calculation"
+      ],
+      "front": "With Kelly inputs <InlineFormula>p = 0.6</InlineFormula> and payoff odds <InlineFormula>b = 2</InlineFormula>, the optimal capital fraction is <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">0.4</Answer>"
+    },
+    {
+      "id": "q53",
+      "topic": "CAPM",
+      "tags": [
+        "asset-pricing"
+      ],
+      "front": "CAPM links expected return to systematic risk measured by <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">beta</Answer>"
+    },
+    {
+      "id": "q54",
+      "topic": "drawdown",
+      "tags": [
+        "risk",
+        "calculation"
+      ],
+      "front": "From the price path 100 → 95 → 104 → 102 → 106 → 103 → 102 → 105, the maximum drawdown is <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">5%</Answer>"
+    },
+    {
+      "id": "q55",
+      "topic": "CAPM",
+      "tags": [
+        "asset-pricing",
+        "calculation"
+      ],
+      "front": "With <InlineFormula>R_f = 3\\%</InlineFormula>, market return <InlineFormula>10\\%</InlineFormula>, and <InlineFormula>\\beta = 1.5</InlineFormula>, the expected return is <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">13.5%</Answer>"
+    },
+    {
+      "id": "q56",
+      "topic": "Sortino ratio",
+      "tags": [
+        "risk-adjusted-return"
+      ],
+      "front": "The downside-risk-only performance ratio is the <Blank id=\"1\"></Blank> ratio.",
+      "back": "<Answer id=\"1\">Sortino</Answer>"
+    },
+    {
+      "id": "q57",
+      "topic": "Sharpe ratio",
+      "tags": [
+        "risk-adjusted-return",
+        "calculation"
+      ],
+      "front": "Using the five monthly returns and a monthly risk-free rate of 0.5%, the annualized Sharpe ratio is about <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">1.59</Answer>"
+    },
+    {
+      "id": "q58",
+      "topic": "Jensen alpha",
+      "tags": [
+        "performance",
+        "calculation"
+      ],
+      "front": "Jensen alpha values are Fund A <Blank id=\"1\"></Blank> and Fund B <Blank id=\"2\"></Blank>.",
+      "back": "- <Answer id=\"1\">-1.2%</Answer>\n- <Answer id=\"2\">2.0%</Answer>"
+    },
+    {
+      "id": "q59",
+      "topic": "GMVP",
+      "tags": [
+        "portfolio",
+        "calculation"
+      ],
+      "front": "For the two-asset GMVP, the weights are Asset X <Blank id=\"1\"></Blank> and Asset Y <Blank id=\"2\"></Blank>.",
+      "back": "- <Answer id=\"1\">0.77</Answer>\n- <Answer id=\"2\">0.23</Answer>"
+    },
+    {
+      "id": "q60",
+      "topic": "market making",
+      "tags": [
+        "market-making",
+        "risk"
+      ],
+      "front": "A market maker is not guaranteed to be <Blank id=\"1\"></Blank> in all market conditions.",
+      "back": "<Answer id=\"1\">profitable</Answer>"
+    },
+    {
+      "id": "q61",
+      "topic": "arbitrage",
+      "tags": [
+        "arbitrage"
+      ],
+      "front": "Temporal arbitrage means buying and selling the same asset across different <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">time frames</Answer>"
+    },
+    {
+      "id": "q62",
+      "topic": "co-location",
+      "tags": [
+        "hft",
+        "execution"
+      ],
+      "front": "Co-location puts servers close to exchange data servers for faster <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">access</Answer>"
+    },
+    {
+      "id": "q63",
+      "topic": "TWAP/VWAP",
+      "tags": [
+        "execution",
+        "benchmarking"
+      ],
+      "front": "TWAP executes evenly over <Blank id=\"1\"></Blank>; VWAP benchmarks price against <Blank id=\"2\"></Blank>.",
+      "back": "- <Answer id=\"1\">time</Answer>\n- <Answer id=\"2\">volume</Answer>"
+    },
+    {
+      "id": "q64",
+      "topic": "Proof-of-Reserves",
+      "tags": [
+        "crypto",
+        "transparency"
+      ],
+      "front": "Proof-of-Reserves is used to prove sufficient <Blank id=\"1\"></Blank> backing liabilities.",
+      "back": "<Answer id=\"1\">reserves</Answer>"
+    },
+    {
+      "id": "q65",
+      "topic": "broker selection",
+      "tags": [
+        "broker",
+        "risk"
+      ],
+      "front": "When choosing a broker, long history and reputation are <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">important</Answer>"
+    },
+    {
+      "id": "q66",
+      "topic": "ETFs",
+      "tags": [
+        "funds"
+      ],
+      "front": "ETFs generally have <Blank id=\"1\"></Blank> expense ratios than mutual funds.",
+      "back": "<Answer id=\"1\">lower</Answer>"
+    },
+    {
+      "id": "q67",
+      "topic": "gradient descent",
+      "tags": [
+        "optimization"
+      ],
+      "front": "Gradient descent requires the objective to be continuous and <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">differentiable</Answer>"
+    },
+    {
+      "id": "q68",
+      "topic": "robust solutions",
+      "tags": [
+        "optimization",
+        "trading-strategy"
+      ],
+      "front": "A robust solution sacrifices maximum <Blank id=\"1\"></Blank> for reliability across scenarios.",
+      "back": "<Answer id=\"1\">performance</Answer>"
+    },
+    {
+      "id": "q69",
+      "topic": "K-means",
+      "tags": [
+        "clustering",
+        "portfolio"
+      ],
+      "front": "K-means can <Blank id=\"1\"></Blank> stocks with similar price movements.",
+      "back": "<Answer id=\"1\">cluster</Answer>"
+    },
+    {
+      "id": "q70",
+      "topic": "reinforcement learning",
+      "tags": [
+        "ml",
+        "algorithmic-trading"
+      ],
+      "front": "Reinforcement learning learns trading actions by trial and <Blank id=\"1\"></Blank>.",
+      "back": "<Answer id=\"1\">error</Answer>"
+    }
+  ]
+}

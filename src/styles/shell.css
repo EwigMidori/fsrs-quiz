@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--canvas);
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--body-strong);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(167, 229, 211, 0.45), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(244, 197, 168, 0.38), transparent 26%),
+    radial-gradient(circle at 90% 80%, rgba(200, 184, 224, 0.38), transparent 24%),
+    linear-gradient(180deg, #fbfbfa 0%, #f5f5f5 42%, #f4f2ef 100%);
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  inset: auto;
+  pointer-events: none;
+  filter: blur(44px);
+  opacity: 0.58;
+  z-index: 0;
+}
+
+body::before {
+  top: 8%;
+  left: 8%;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 9999px;
+  background: rgba(167, 229, 211, 0.45);
+}
+
+body::after {
+  right: 10%;
+  bottom: 10%;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9999px;
+  background: rgba(244, 197, 168, 0.36);
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100svh;
+}
+
+::selection {
+  background: rgba(41, 36, 37, 0.12);
+}

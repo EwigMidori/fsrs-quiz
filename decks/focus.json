@@ -1,0 +1,236 @@
+{
+  "deck_name": "finance_exam_cram",
+  "language": "zh-CN",
+  "source": "RAW.txt",
+  "cards": [
+    {
+      "id": "r2_01",
+      "topic": "R^2",
+      "tags": [
+        "regression",
+        "fit"
+      ],
+      "front": "已知 <BlockFormula>R^2 = 1 - \\frac{SS_{\\mathrm{res}}}{SS_{\\mathrm{tot}}}</BlockFormula>，且 <InlineFormula>SS_{\\mathrm{tot}} = 200</InlineFormula>、<InlineFormula>SS_{\\mathrm{res}} = 50</InlineFormula>，求 <InlineFormula>R^2</InlineFormula>。",
+      "back": "<BlockFormula>R^2 = 1 - \\frac{50}{200} = 0.75</BlockFormula>"
+    },
+    {
+      "id": "arima_01",
+      "topic": "ARIMA",
+      "tags": [
+        "time-series"
+      ],
+      "front": "填空：<InlineFormula>\\mathrm{ARIMA}(p,d,q)</InlineFormula> 中，<InlineFormula>p</InlineFormula> 表示 ____, <InlineFormula>d</InlineFormula> 表示 ____, <InlineFormula>q</InlineFormula> 表示 ____；选 <InlineFormula>p</InlineFormula> 常看 ____, 选 <InlineFormula>q</InlineFormula> 常看 ____。",
+      "back": "答案：<InlineFormula>p</InlineFormula> = AR 阶数，<InlineFormula>d</InlineFormula> = 差分次数，<InlineFormula>q</InlineFormula> = MA 阶数；选 <InlineFormula>p</InlineFormula> 常看 PACF，选 <InlineFormula>q</InlineFormula> 常看 ACF"
+    },
+    {
+      "id": "hurst_01",
+      "topic": "Hurst 指数",
+      "tags": [
+        "time-series"
+      ],
+      "front": "若 <BlockFormula>\\log\\left(\\frac{R}{S}\\right) = a + 0.68\\log(n)</BlockFormula>，<InlineFormula>H</InlineFormula> 等于多少？这通常说明序列更偏向什么特征？",
+      "back": "<InlineFormula>H = 0.68</InlineFormula>；<InlineFormula>H > 0.5</InlineFormula> 通常表示持续性/趋势延续"
+    },
+    {
+      "id": "ar_01",
+      "topic": "AR 预测",
+      "tags": [
+        "time-series"
+      ],
+      "front": "AR(1) 模型 <BlockFormula>x_t = 2 + 0.6x_{t-1} + e_t</BlockFormula>，若 <InlineFormula>x_{t-1} = 10</InlineFormula>，一步预测值是多少？",
+      "back": "<BlockFormula>\\hat{x}_t = 2 + 0.6 \\times 10 = 8</BlockFormula>"
+    },
+    {
+      "id": "rollover_swap_01",
+      "topic": "Rollover Swap",
+      "tags": [
+        "fx",
+        "swap"
+      ],
+      "front": "填空：Rollover swap 的本质是持仓过夜时因 ________ 产生的隔夜利息或点数调整。",
+      "back": "两种货币/利率之间的利差"
+    },
+    {
+      "id": "vecm_01",
+      "topic": "VECM",
+      "tags": [
+        "time-series",
+        "cointegration"
+      ],
+      "front": "填空：当两个 <InlineFormula>\\mathrm{I}(1)</InlineFormula> 序列存在协整时，VECM 会在差分 VAR 中加入 ________ 项，用来修正长期均衡偏离。",
+      "back": "误差修正项（error correction term）"
+    },
+    {
+      "id": "arch_01",
+      "topic": "ARCH",
+      "tags": [
+        "volatility",
+        "time-series"
+      ],
+      "front": "<BlockFormula>\\sigma_t^2 = 0.2 + 0.3 e_{t-1}^2 + 0.4 e_{t-2}^2</BlockFormula>。若 <InlineFormula>e_{t-1}^2 = 1</InlineFormula>，<InlineFormula>e_{t-2}^2 = 2</InlineFormula>，<InlineFormula>\\sigma_t^2</InlineFormula> 等于多少？",
+      "back": "<BlockFormula>\\sigma_t^2 = 0.2 + 0.3 \\times 1 + 0.4 \\times 2 = 1.3</BlockFormula>；若求无条件方差，则 <BlockFormula>\\sigma^2 = \\frac{0.2}{1 - 0.3 - 0.4} = 0.6667</BlockFormula>"
+    },
+    {
+      "id": "garch_01",
+      "topic": "GARCH",
+      "tags": [
+        "volatility",
+        "time-series"
+      ],
+      "front": "<BlockFormula>\\sigma_t^2 = 0.1 + 0.2 e_{t-1}^2 + 0.7 \\sigma_{t-1}^2</BlockFormula>。若 <InlineFormula>e_{t-1}^2 = 1.5</InlineFormula>、<InlineFormula>\\sigma_{t-1}^2 = 1.2</InlineFormula>，<InlineFormula>\\sigma_t^2</InlineFormula> 等于多少？",
+      "back": "<BlockFormula>\\sigma_t^2 = 0.1 + 0.2 \\times 1.5 + 0.7 \\times 1.2 = 1.24</BlockFormula>；GARCH 用来刻画波动率聚集"
+    },
+    {
+      "id": "excess_return_01",
+      "topic": "超额收益",
+      "tags": [
+        "return",
+        "risk"
+      ],
+      "front": "填空：超额收益 = ________ - ________。若 <InlineFormula>R_e = 12\\%</InlineFormula>，<InlineFormula>R_f = 3\\%</InlineFormula>，超额收益是多少？",
+      "back": "<InlineFormula>12\\% - 3\\% = 9\\%</InlineFormula>"
+    },
+    {
+      "id": "annualization_01",
+      "topic": "年化换算",
+      "tags": [
+        "volatility",
+        "returns"
+      ],
+      "front": "填空：日频收益率年化通常乘以 <InlineFormula>\\sqrt{\\phantom{000}}</InlineFormula>，周频乘以 <InlineFormula>\\sqrt{\\phantom{00}}</InlineFormula>，月频乘以 <InlineFormula>\\sqrt{\\phantom{00}}</InlineFormula>。",
+      "back": "252, 52, 12"
+    },
+    {
+      "id": "annualized_vol_01",
+      "topic": "总风险/年化波动率",
+      "tags": [
+        "volatility",
+        "risk"
+      ],
+      "front": "若日收益率标准差 <InlineFormula>\\sigma_{\\mathrm{day}} = 1.2\\%</InlineFormula>，年化波动率是多少？",
+      "back": "<BlockFormula>\\sigma_{\\mathrm{annual}} = \\sigma_{\\mathrm{day}} \\times \\sqrt{252} = 1.2\\% \\times 15.874\\ldots \\approx 19.05\\%</BlockFormula>；波动率 = 方差的平方根"
+    },
+    {
+      "id": "log_return_01",
+      "topic": "对数收益率",
+      "tags": [
+        "returns"
+      ],
+      "front": "价格从 100 变到 105，对数收益率是多少？",
+      "back": "<BlockFormula>\\ln\\left(\\frac{105}{100}\\right) = \\ln(1.05) \\approx 0.0488</BlockFormula>，约 <InlineFormula>4.88\\%</InlineFormula>"
+    },
+    {
+      "id": "sharpe_01",
+      "topic": "Sharpe 比率",
+      "tags": [
+        "risk-adjusted-return"
+      ],
+      "front": "若超额收益为 <InlineFormula>8\\%</InlineFormula>，总风险（年化波动率）为 <InlineFormula>16\\%</InlineFormula>，Sharpe 比率是多少？",
+      "back": "<BlockFormula>\\text{Sharpe} = \\frac{8\\%}{16\\%} = 0.5</BlockFormula>"
+    },
+    {
+      "id": "sortino_01",
+      "topic": "Sortino 比率",
+      "tags": [
+        "risk-adjusted-return"
+      ],
+      "front": "若超额收益为 <InlineFormula>8\\%</InlineFormula>，下行风险为 <InlineFormula>10\\%</InlineFormula>，Sortino 比率是多少？",
+      "back": "<BlockFormula>\\text{Sortino} = \\frac{8\\%}{10\\%} = 0.8</BlockFormula>；下行标准差只统计低于目标收益率的样本"
+    },
+    {
+      "id": "var_01",
+      "topic": "VaR",
+      "tags": [
+        "risk",
+        "tail-risk"
+      ],
+      "front": "若资产价值 <InlineFormula>1{,}000{,}000</InlineFormula>，<InlineFormula>\\sigma = 1.5\\%</InlineFormula>，<InlineFormula>95\\%</InlineFormula> 置信度下的参数法 VaR 约是多少？",
+      "back": "<BlockFormula>\\mathrm{VaR} = 1.65 \\times 0.015 \\times 1{,}000{,}000 = 24{,}750</BlockFormula>"
+    },
+    {
+      "id": "pip_01",
+      "topic": "PIP",
+      "tags": [
+        "fx"
+      ],
+      "front": "EUR/USD 从 1.1050 变到 1.1073，变动了多少 pip？",
+      "back": "<BlockFormula>\\frac{1.1073 - 1.1050}{0.0001} = 23</BlockFormula> pip"
+    },
+    {
+      "id": "lot_01",
+      "topic": "Lot",
+      "tags": [
+        "fx",
+        "position-sizing"
+      ],
+      "front": "若每标准 lot 的止损损失为 250 美元，风险预算为 1,000 美元，可下几手标准 lot？",
+      "back": "<BlockFormula>\\frac{1{,}000}{250} = 4</BlockFormula> lots"
+    },
+    {
+      "id": "kelly_01",
+      "topic": "Kelly 公式",
+      "tags": [
+        "position-sizing"
+      ],
+      "front": "若胜率 <InlineFormula>p = 0.55</InlineFormula>，败率 <InlineFormula>q = 0.45</InlineFormula>，赔率 <InlineFormula>b = 1.5</InlineFormula>，Kelly 仓位 <InlineFormula>f</InlineFormula> 等于多少？",
+      "back": "<BlockFormula>f = p - \\frac{q}{b} = 0.55 - \\frac{0.45}{1.5} = 0.25</BlockFormula>"
+    },
+    {
+      "id": "capm_01",
+      "topic": "CAPM",
+      "tags": [
+        "asset-pricing"
+      ],
+      "front": "若 <InlineFormula>R_f = 3\\%</InlineFormula>，<InlineFormula>\\beta = 1.2</InlineFormula>，市场风险溢价 <InlineFormula>\\mathrm{ERP} = 7\\%</InlineFormula>，CAPM 预期收益率是多少？",
+      "back": "<BlockFormula>R_f + \\beta \\times \\mathrm{ERP} = 3\\% + 1.2 \\times 7\\% = 11.4\\%</BlockFormula>"
+    },
+    {
+      "id": "risk_breakdown_01",
+      "topic": "总风险",
+      "tags": [
+        "risk"
+      ],
+      "front": "填空：总风险 = ________ + ________。哪一部分可以通过分散化大幅消除？",
+      "back": "系统性风险 + 非系统性风险；可通过分散化大幅消除的是非系统性风险"
+    },
+    {
+      "id": "cml_01",
+      "topic": "CML",
+      "tags": [
+        "asset-pricing",
+        "risk"
+      ],
+      "front": "CML 中若 <InlineFormula>R_f = 2\\%</InlineFormula>，市场组合年化波动率 <InlineFormula>\\sigma_m = 20\\%</InlineFormula>，市场 <InlineFormula>\\text{Sharpe} = 0.4</InlineFormula>，组合 <InlineFormula>\\sigma_p = 15\\%</InlineFormula>，则 <InlineFormula>E(R_p)</InlineFormula> 等于多少？",
+      "back": "<BlockFormula>E(R_p) = R_f + \\text{Sharpe} \\times \\sigma_p = 2\\% + 0.4 \\times 15\\% = 8\\%</BlockFormula>"
+    },
+    {
+      "id": "sml_01",
+      "topic": "SML",
+      "tags": [
+        "asset-pricing",
+        "risk"
+      ],
+      "front": "SML 中横轴使用的是哪种风险？若 <InlineFormula>R_f = 2\\%</InlineFormula>，<InlineFormula>\\mathrm{ERP} = 6\\%</InlineFormula>，<InlineFormula>\\beta = 1.4</InlineFormula>，期望收益率是多少？",
+      "back": "横轴是 <InlineFormula>\\beta</InlineFormula>（系统性风险）；<BlockFormula>2\\% + 1.4 \\times 6\\% = 10.4\\%</BlockFormula>"
+    },
+    {
+      "id": "treynor_01",
+      "topic": "Treynor 比率",
+      "tags": [
+        "risk-adjusted-return"
+      ],
+      "front": "若组合收益率 <InlineFormula>12\\%</InlineFormula>，无风险收益率 <InlineFormula>4\\%</InlineFormula>，<InlineFormula>\\beta = 1.5</InlineFormula>，Treynor 比率是多少？",
+      "back": "<BlockFormula>\\text{Treynor} = \\frac{12\\% - 4\\%}{1.5} = 5.33\\%</BlockFormula>"
+    },
+    {
+      "id": "jensen_alpha_01",
+      "topic": "Jensen's Alpha",
+      "tags": [
+        "asset-pricing",
+        "performance"
+      ],
+      "front": "若 <InlineFormula>R_p = 12\\%</InlineFormula>，<InlineFormula>R_f = 3\\%</InlineFormula>，<InlineFormula>R_m = 9\\%</InlineFormula>，<InlineFormula>\\beta = 1.2</InlineFormula>，Jensen's alpha 是多少？",
+      "back": "<BlockFormula>\\alpha_J = R_p - [R_f + \\beta (R_m - R_f)] = 12\\% - [3\\% + 1.2 \\times 6\\%] = 1.8\\%</BlockFormula>"
+    }
+  ]
+}
