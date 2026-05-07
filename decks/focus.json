@@ -19,8 +19,8 @@
       "tags": [
         "time-series"
       ],
-      "front": "填空：<InlineFormula>\\mathrm{ARIMA}(p,d,q)</InlineFormula> 中，<InlineFormula>p</InlineFormula> 表示 ____, <InlineFormula>d</InlineFormula> 表示 ____, <InlineFormula>q</InlineFormula> 表示 ____；选 <InlineFormula>p</InlineFormula> 常看 ____, 选 <InlineFormula>q</InlineFormula> 常看 ____。",
-      "back": "答案：<InlineFormula>p</InlineFormula> = AR 阶数，<InlineFormula>d</InlineFormula> = 差分次数，<InlineFormula>q</InlineFormula> = MA 阶数；选 <InlineFormula>p</InlineFormula> 常看 PACF，选 <InlineFormula>q</InlineFormula> 常看 ACF"
+      "front": "填空：<InlineFormula>\\mathrm{ARIMA}(p,d,q)</InlineFormula> 中，<InlineFormula>p</InlineFormula> 表示 <Blank id=\"1\"></Blank>, <InlineFormula>d</InlineFormula> 表示 <Blank id=\"2\"></Blank>, <InlineFormula>q</InlineFormula> 表示 <Blank id=\"3\"></Blank>；选 <InlineFormula>p</InlineFormula> 常看 <Blank id=\"4\"></Blank>, 选 <InlineFormula>q</InlineFormula> 常看 <Blank id=\"5\"></Blank>。",
+      "back": "- <Answer id=\"1\">AR 阶数</Answer>\n- <Answer id=\"2\">差分次数</Answer>\n- <Answer id=\"3\">MA 阶数</Answer>\n- <Answer id=\"4\">PACF</Answer>\n- <Answer id=\"5\">ACF</Answer>"
     },
     {
       "id": "hurst_01",
@@ -47,8 +47,8 @@
         "fx",
         "swap"
       ],
-      "front": "填空：Rollover swap 的本质是持仓过夜时因 ________ 产生的隔夜利息或点数调整。",
-      "back": "两种货币/利率之间的利差"
+      "front": "填空：Rollover swap 的本质是持仓过夜时因 <Blank id=\"1\"></Blank> 产生的隔夜利息或点数调整。",
+      "back": "<Answer id=\"1\">两种货币/利率之间的利差</Answer>"
     },
     {
       "id": "vecm_01",
@@ -57,8 +57,8 @@
         "time-series",
         "cointegration"
       ],
-      "front": "填空：当两个 <InlineFormula>\\mathrm{I}(1)</InlineFormula> 序列存在协整时，VECM 会在差分 VAR 中加入 ________ 项，用来修正长期均衡偏离。",
-      "back": "误差修正项（error correction term）"
+      "front": "填空：当两个 <InlineFormula>\\mathrm{I}(1)</InlineFormula> 序列存在协整时，VECM 会在差分 VAR 中加入 <Blank id=\"1\"></Blank> 项，用来修正长期均衡偏离。",
+      "back": "<Answer id=\"1\">误差修正项</Answer>（error correction term）"
     },
     {
       "id": "arch_01",
@@ -87,8 +87,8 @@
         "return",
         "risk"
       ],
-      "front": "填空：超额收益 = ________ - ________。若 <InlineFormula>R_e = 12\\%</InlineFormula>，<InlineFormula>R_f = 3\\%</InlineFormula>，超额收益是多少？",
-      "back": "<InlineFormula>12\\% - 3\\% = 9\\%</InlineFormula>"
+      "front": "填空：超额收益 = <Blank id=\"1\"></Blank> - <Blank id=\"2\"></Blank>。若 <InlineFormula>R_e = 12\\%</InlineFormula>，<InlineFormula>R_f = 3\\%</InlineFormula>，超额收益是多少？",
+      "back": "- <Answer id=\"1\">R_e</Answer>\n- <Answer id=\"2\">R_f</Answer>\n- <InlineFormula>12\\% - 3\\% = 9\\%</InlineFormula>"
     },
     {
       "id": "annualization_01",
@@ -97,8 +97,8 @@
         "volatility",
         "returns"
       ],
-      "front": "填空：日频收益率年化通常乘以 <InlineFormula>\\sqrt{\\phantom{000}}</InlineFormula>，周频乘以 <InlineFormula>\\sqrt{\\phantom{00}}</InlineFormula>，月频乘以 <InlineFormula>\\sqrt{\\phantom{00}}</InlineFormula>。",
-      "back": "252, 52, 12"
+      "front": "填空：日频收益率年化通常乘以 √<Blank id=\"1\"></Blank>，周频乘以 √<Blank id=\"2\"></Blank>，月频乘以 √<Blank id=\"3\"></Blank>。",
+      "back": "- <Answer id=\"1\">252</Answer>\n- <Answer id=\"2\">52</Answer>\n- <Answer id=\"3\">12</Answer>"
     },
     {
       "id": "annualized_vol_01",
@@ -190,8 +190,8 @@
       "tags": [
         "risk"
       ],
-      "front": "填空：总风险 = ________ + ________。哪一部分可以通过分散化大幅消除？",
-      "back": "系统性风险 + 非系统性风险；可通过分散化大幅消除的是非系统性风险"
+      "front": "填空：总风险 = <Blank id=\"1\"></Blank> + <Blank id=\"2\"></Blank>。哪一部分可以通过分散化大幅消除？",
+      "back": "- <Answer id=\"1\">系统性风险</Answer>\n- <Answer id=\"2\">非系统性风险</Answer>\n可通过分散化大幅消除的是非系统性风险"
     },
     {
       "id": "cml_01",
